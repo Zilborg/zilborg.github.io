@@ -87,22 +87,22 @@ $(document).ready(function() {
 
 
 own_calc_cvss = function (){
-    result_cvss_calc = CVSS.calculateCVSSFromVector($( "div[id=Result_cvss]").text().slice(0,-1) + add_to_end);
-    // console.log(result_cvss_calc)
+    result_cvss_calc = CVSS.calculateCVSSFromVector($.trim($( "div[id=Result_cvss]").text()) + add_to_end);
     $( "div[id=level_vuln_cvss]").text(result_cvss_calc.baseSeverity);
     $( "span[id=score_cvss]").text(result_cvss_calc.baseMetricScore);
 };
 own_calc_bis_imp = function (){
-    result_bis_imp_calc = BIS_IMP.calculateBisImpFromVector($( "div[id=Result_bis_imp]").text().slice(0,-1));
-    // console.log(result_bis_imp_calc)
+    result_bis_imp_calc = BIS_IMP.calculateBisImpFromVector($.trim($( "div[id=Result_bis_imp]").text()));
+//    console.log(result_bis_imp_calc)
     $( "div[id=level_vuln_bis_imp]").text(result_bis_imp_calc.level);
     $( "span[id=score_bis_imp]").text(result_bis_imp_calc.score);
 }
 own_calc_fin = function (){
     fin_res_score = (parseFloat(result_cvss_calc.baseMetricScore) + parseFloat(result_bis_imp_calc.score))/2;
     $( "span[id=fin_level]").text(evalute_level_fin(fin_res_score));
+//    console.log(result_cvss_calc)
     $( "span[id=fin_score]").text(fin_res_score);
-    // console.log(fin_res_score)
+//    console.log(fin_res_score)
 }
 
 evalute_level_fin =function(score){

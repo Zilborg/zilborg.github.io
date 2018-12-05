@@ -7,70 +7,141 @@
 <script src="js/calc30.js"></script>
 <script src="js/calc_bis.js"></script>
 <script src="js/main.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <form>
-    <h5>Attack Vector (AV)</h5>
-	<input type="radio" name="AV" class="radio-custom" id="AV:N" checked="checked" value="0.85">Network
-	<input type="radio" name="AV" id="AV:A" value="0.62">Adjacent
-    <input type="radio" name="AV" id="AV:L" value="0.55">Local
-    <input type="radio" name="AV" id="AV:P" value="0.2">Physical
-    <h5>Attack Complexity (AC)</h5>
-    <input type="radio" name="AC" id="AC:L" checked="checked" value="0.44">Low
-    <input type="radio" name="AC" id="AC:H" value="0.77">High
-    <h5>Privileges Required (PR)</h5>
-    <input type="radio" name="PR" id="PR:N" checked="checked" value="0.55">None
-    <input type="radio" name="PR" id="PR:L" value="0.2">Low
-    <input type="radio" name="PR" id="PR:H" value="0.55">High
-    <h5>User Interaction (UI)</h5>
-    <input type="radio" name="UI" id="UI:N" checked="checked" value="0.2">None
-    <input type="radio" name="UI" id="UI:R" value="0.55">Required
-    <h5>Scope (S)</h5>
-    <input type="radio" name="S" id="S:U" checked="checked" value="0.2">Unchanged
-    <input type="radio" name="S" id="S:C" value="0.55">Changed
-    <h5>Confidentiality (C)</h5>
-    <input type="radio" name="C" id="C:N" checked="checked" value="0.2">None
-    <input type="radio" name="C" id="C:L" value="0.55">Low
-    <input type="radio" name="C" id="C:H" value="0.2">High
-    <h5>Integrity (I)</h5>
-    <input type="radio" name="I" id="I:N" checked="checked" value="0.55">None
-    <input type="radio" name="I" id="I:L" value="0.2">Low
-    <input type="radio" name="I" id="I:H" value="0.55">High
-    <h5>Availability (A)</h5>
-    <input type="radio" name="A" id="A:N" checked="checked" value="0.55">None
-    <input type="radio" name="A" id="A:L" value="0.2">Low
-    <input type="radio" name="A" id="A:H" value="0.55">High
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="radio__container">
+          <h5>Attack Vector (AV)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="AV" class="radio" id="AV:N" checked="checked" value="0.85"><label class="radio__label" for="AV:N">Network</label>
+            <input type="radio" name="AV" class="radio" id="AV:A" value="0.62"><label class="radio__label" for="AV:A">Adjacent</label>
+            <input type="radio" name="AV" class="radio" id="AV:L" value="0.55"><label class="radio__label" for="AV:L">Local</label>
+            <input type="radio" name="AV" class="radio" id="AV:P" value="0.2"><label class="radio__label" for="AV:P">Physical</label>
+          </div>
+        </div>
+        <div class="radio__container">
+          <h5>Attack Complexity (AC)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="AC" class="radio" id="AC:L" checked="checked" value="0.44"><label class="radio__label" for="AC:L">Low</label>
+            <input type="radio" name="AC" class="radio" id="AC:H" value="0.77"><label class="radio__label" for="AC:H">High</label>
+          </div>
+        </div>
+        <div class="radio__container">  
+          <h5>Privileges Required (PR)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="PR" class="radio" id="PR:N" checked="checked" value="0.55"><label class="radio__label" for="PR:N">None</label>
+            <input type="radio" name="PR" class="radio" id="PR:L" value="0.2"><label class="radio__label" for="PR:L">Low</label>
+            <input type="radio" name="PR" class="radio" id="PR:H" value="0.55"><label class="radio__label" for="PR:H">High</label>
+          </div>
+        </div>
+        <div class="radio__container">
+          <h5>User Interaction (UI)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="UI" class="radio" id="UI:N" checked="checked" value="0.2"><label class="radio__label" for="UI:N">None</label>
+            <input type="radio" name="UI" class="radio" id="UI:R" value="0.55"><label class="radio__label" for="UI:R">Required</label>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="radio__container">
+          <h5>Scope (S)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="S" class="radio" id="S:U" checked="checked" value="0.2"><label class="radio__label" for="S:U">Unchanged</label>
+            <input type="radio" name="S" class="radio" id="S:C" value="0.55"><label class="radio__label" for="S:C">Changed</label>
+          </div>
+        </div>
+        <div class="radio__container">
+          <h5>Confidentiality (C)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="C" class="radio" id="C:N" checked="checked" value="0.2"><label class="radio__label" for="C:N">None</label>
+            <input type="radio" name="C" class="radio" id="C:L" value="0.55"><label class="radio__label" for="C:L">Low</label>
+            <input type="radio" name="C" class="radio" id="C:H" value="0.2"><label class="radio__label" for="C:H">High</label>
+          </div>
+        </div>
+        <div class="radio__container">
+          <h5>Integrity (I)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="I" class="radio" id="I:N" checked="checked" value="0.55"><label class="radio__label" for="I:N">None</label>
+            <input type="radio" name="I" class="radio" id="I:L" value="0.2"><label class="radio__label" for="I:L">Low</label>
+            <input type="radio" name="I" class="radio" id="I:H" value="0.55"><label class="radio__label" for="I:H">High</label>
+          </div>
+        </div>
+        <div class="radio__container">
+          <h5>Availability (A)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="A" class="radio" id="A:N" checked="checked" value="0.55"><label class="radio__label" for="A:N">None</label>
+            <input type="radio" name="A" class="radio" id="A:L" value="0.2"><label class="radio__label" for="A:L">Low</label>
+            <input type="radio" name="A" class="radio" id="A:H" value="0.55"><label class="radio__label" for="A:H">High</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </form>
-<div class="Level_and_score">Results: <div id="level_vuln_cvss"></div><span id="score_cvss"></span>
+<div class="container">
+  <div class="row ml-1 mb-3">
+      <div class="Level_and_score">Results: <div id="level_vuln_cvss"></div><span id="score_cvss"></span>
+      </div>
+      <div id="Result_cvss"><p>CVSS:3.0/</p><p id="cvss_AV">AV:N</p>/<p id="cvss_AC">AC:L</p>/<p id="cvss_PR">PR:N</p>/<p id="cvss_UI">UI:N</p>/<p id="cvss_S">S:U</p>/<p id="cvss_C">C:N</p>/<p id="cvss_I">I:N</p>/<p id="cvss_A">A:N</p>
+      </div>
+          <button class="btn btn-outline-primary btn-sm" onclick="copyToClipboard_cvss()">Copy</button>
+    </div>
 </div>
-<div id="Result_cvss"><p>CVSS:3.0/</p><p id="cvss_AV">AV:N</p>/<p id="cvss_AC">AC:L</p>/<p id="cvss_PR">PR:N</p>/<p id="cvss_UI">UI:N</p>/<p id="cvss_S">S:U</p>/<p id="cvss_C">C:N</p>/<p id="cvss_I">I:N</p>/<p id="cvss_A">A:N</p>
-</div><button onclick="copyToClipboard_cvss()">Copy</button>
 <form>
-    <h5>Financial Damager (FD)</h5>
-    <input type="radio" name="FD" id="FD:L" checked="checked" value="1">Less than the cost fixing vulnerability (1)
-    <input type="radio" name="FD" id="FD:M" value="3">Minor effect on annual profit (3)
-    <input type="radio" name="FD" id="FD:S" value="7">Significant effect on annual profit (7)
-    <input type="radio" name="FD" id="FD:B" value="9">Bankruptcy (9)
-    <h5>Reputation Damage (RD)</h5>
-    <input type="radio" name="RD" id="RD:M" checked="checked" value="1">Minimal damage (1)
-    <input type="radio" name="RD" id="RD:LM" value="4">Loss of major accounts (4)
-    <input type="radio" name="RD" id="RD:LG" value="5">Loss of goodwill (5)
-    <input type="radio" name="RD" id="RD:B" value="9">Brand damage (9)
-    <h5>Non-Compliance (NC)</h5>
-    <input type="radio" name="NC" id="NC:M" checked="checked" value="2">Minor violation (2)
-    <input type="radio" name="NC" id="NC:C" value="5">Clear violation (5)
-    <input type="radio" name="NC" id="NC:H" value="7">High profile violation (7)
-    <h5>Privacy Violation (PV)</h5>
-    <input type="radio" name="PV" id="PV:O" checked="checked" value="3">One individual (3)
-    <input type="radio" name="PV" id="PV:H" value="5">Hundreds of people (5)
-    <input type="radio" name="PV" id="PV:T" value="7">Thousands of people (7)
-    <input type="radio" name="PV" id="PV:M" value="9">Millions of people (9)
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="radio__container should_block">
+          <h5>Financial Damager (FD)</h5>
+          <input type="radio" name="FD"  class="radio" id="FD:L" checked="checked" value="1"><label class="radio__label" for="FD:L">Less than the cost fixing vulnerability (1)</label>
+          <input type="radio" name="FD"  class="radio" id="FD:M" value="3"><label class="radio__label" for="FD:M">Minor effect on annual profit (3)</label>
+          <input type="radio" name="FD"  class="radio" id="FD:S" value="7"><label class="radio__label" for="FD:S">Significant effect on annual profit (7)</label>
+          <input type="radio" name="FD"  class="radio" id="FD:B" value="9"><label class="radio__label" for="FD:B">Bankruptcy (9)</label>
+        </div>
+        <div class="radio__container should_block">
+          <h5>Reputation Damage (RD)</h5>
+          <input type="radio" name="RD"  class="radio" id="RD:M" checked="checked" value="1"><label class="radio__label" for="RD:M">Minimal damage (1)</label>
+          <input type="radio" name="RD"  class="radio" id="RD:LM" value="4"><label class="radio__label" for="RD:LM">Loss of major accounts (4)</label>
+          <input type="radio" name="RD"  class="radio" id="RD:LG" value="5"><label class="radio__label" for="RD:LG">Loss of goodwill (5)</label>
+          <input type="radio" name="RD"  class="radio" id="RD:B" value="9"><label class="radio__label" for="RD:B">Brand damage (9)</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="radio__container should_block">
+          <h5>Non-Compliance (NC)</h5>
+          <input type="radio" name="NC"  class="radio" id="NC:M" checked="checked" value="2"><label class="radio__label" for="NC:M">Minor violation (2)</label>
+          <input type="radio" name="NC"  class="radio" id="NC:C" value="5"><label class="radio__label" for="NC:C">Clear violation (5)</label>
+          <input type="radio" name="NC"  class="radio" id="NC:H" value="7"><label class="radio__label" for="NC:H">High profile violation (7)</label>
+        </div>
+        <div class="radio__container should_block">
+          <h5>Privacy Violation (PV)</h5>
+          <input type="radio" name="PV"  class="radio" id="PV:O" checked="checked" value="3"><label class="radio__label" for="PV:O">One individual (3)</label>
+          <input type="radio" name="PV"  class="radio" id="PV:H" value="5"><label class="radio__label" for="PV:H">Hundreds of people (5)</label>
+          <input type="radio" name="PV"  class="radio" id="PV:T" value="7"><label class="radio__label" for="PV:T">Thousands of people (7)</label>
+          <input type="radio" name="PV"  class="radio" id="PV:M" value="9"><label class="radio__label" for="PV:M">Millions of people (9)</label>
+        </div>
+      </div>
+    </div>
+  </div>
 </form>
-<div class="Level_and_score">Results: <div id="level_vuln_bis_imp"></div><span id="score_bis_imp"></span></div>
-<div id="Result_bis_imp"><p>BIS-IMP:1.0/</p><p id="bis_FD">FD:L</p>/<p id="bis_RD">RD:M</p>/<p id="bis_NC">NC:M</p>/<p id="bis_PV">PV:O</p>
-</div><button onclick="copyToClipboard_bis_imp()">Copy</button>
-<div class="Level_and_score"><h4>Result:<span id="fin_level"></span><span id="fin_score"></span></h4></div>
-<button onclick="copyToClipboard_fin_res()">Copy</button>
+<div class="container">
+  <div class="row ml-1 mb-3">
+    <div class="Level_and_score">Results: <div id="level_vuln_bis_imp"></div><span id="score_bis_imp"></span></div>
+    <div id="Result_bis_imp"><p>BIS-IMP:1.0/</p><p id="bis_FD">FD:L</p>/<p id="bis_RD">RD:M</p>/<p id="bis_NC">NC:M</p>/<p id="bis_PV">PV:O</p>
+    </div><button class="btn btn-outline-primary btn-sm" onclick="copyToClipboard_bis_imp()">Copy</button>
+  </div>
+</div>
+ <div class="container"> 
+  <div class="row ml-1 mb-3">
+    <div id="fin_res_bold">Result:<span id="fin_level"></span><span id="fin_score"></span></div>
+    <button  class="d-inline btn btn-outline-primary btn-sm"
+            onclick="copyToClipboard_fin_res()">Copy</button>
+   </div>
+  </div>
 </body>
 </html>
