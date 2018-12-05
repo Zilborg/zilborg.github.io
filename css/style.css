@@ -1,0 +1,22 @@
+
+p {
+    display: inline-block;
+}
+form{
+    display: block;
+}
+ .Level_and_score{
+        margin-top: 1em;
+ }
+.Level_and_score div, .Level_and_score span{
+    margin-left: 1em;
+    display: inline-block;
+}
+#score_cvss{
+    padding-left: 1em;
+}
+h5 {
+    font-size: 15px;
+    margin: 0;
+    padding:0.5em 1em;
+}
