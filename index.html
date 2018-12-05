@@ -131,7 +131,27 @@ evalute_level_fin =function(score){
         return "Critical";
     }; 
 };
-
+function copyToClipboard_cvss() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($( "div[id=Result_cvss]").text().slice(0,-1) + " = " + $( "span[id=score_cvss]").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
+function copyToClipboard_bis_imp() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($( "div[id=Result_bis_imp]").text().slice(0,-1) + " = " + $( "span[id=score_bis_imp]").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
+function copyToClipboard_fin_res() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($( "span[id=fin_level]").text() + " = " + $( "span[id=fin_score]").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
 
 </script>
 <style type="text/css">
@@ -195,7 +215,7 @@ evalute_level_fin =function(score){
 <div class="Level_and_score">Results: <div id="level_vuln_cvss"></div><span id="score_cvss"></span>
 </div>
 <div id="Result_cvss"><p>CVSS:3.0/</p><p id="cvss_AV">AV:N</p>/<p id="cvss_AC">AC:L</p>/<p id="cvss_PR">PR:N</p>/<p id="cvss_UI">UI:N</p>/<p id="cvss_S">S:U</p>/<p id="cvss_C">C:N</p>/<p id="cvss_I">I:N</p>/<p id="cvss_A">A:N</p>
-</div>
+</div><button onclick="copyToClipboard_cvss()">Copy</button>
 <form>
     <h5>Financial Damager (FD)</h5>
     <input type="radio" name="FD" id="FD:L" checked="checked" value="1">Less than the cost fixing vulnerability (1)
@@ -219,7 +239,8 @@ evalute_level_fin =function(score){
 </form>
 <div class="Level_and_score">Results: <div id="level_vuln_bis_imp"></div><span id="score_bis_imp"></span></div>
 <div id="Result_bis_imp"><p>BIS-IMP:1.0/</p><p id="bis_FD">FD:L</p>/<p id="bis_RD">RD:M</p>/<p id="bis_NC">NC:M</p>/<p id="bis_PV">PV:O</p>
-</div>
+</div><button onclick="copyToClipboard_bis_imp()">Copy</button>
 <div class="Level_and_score"><h4>Result:<span id="fin_level"></span><span id="fin_score"></span></h4></div>
+<button onclick="copyToClipboard_fin_res()">Copy</button>
 </body>
 </html>
