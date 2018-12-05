@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GoGoGo</title>
+<meta charset="utf-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="calc30.js"></script>
+<script src="calc_bis.js"></script>
+<script> 
+var add_to_end = "/E:X/RL:X/RC:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MPR:X/MUI:X/MS:X/MC:X/MI:X/MA:X";
+var result_cvss_calc;
+var result_bis_imp_calc;
+$(window).on('load', function() {
+    $('input:radio[id="AV:N"]').prop('checked', true);
+    $('input:radio[id="AC:L"]').prop('checked', true);
+    $('input:radio[id="PR:N"]').prop('checked', true);
+    $('input:radio[id="UI:N"]').prop('checked', true);
+    $('input:radio[id="S:U"]').prop('checked', true);
+    $('input:radio[id="C:N"]').prop('checked', true);
+    $('input:radio[id="I:N"]').prop('checked', true);
+    $('input:radio[id="A:N"]').prop('checked', true);
+    $('input:radio[id="FD:L"]').prop('checked', true);
+    $('input:radio[id="RD:M"]').prop('checked', true);
+    $('input:radio[id="NC:M"]').prop('checked', true); 
+    $('input:radio[id="PV:O"]').prop('checked', true);
+    own_calc_cvss();
+    own_calc_bis_imp();
+    own_calc_fin();     
+});
+    var result;
+$(document).ready(function() {
+    $('input:radio[name=AV]').change(function() {
+        $( "p[id=cvss_AV]" ).text( $(this).attr('id') );
+        own_calc_cvss();
+        own_calc_fin();
+    });
+    $('input:radio[name=AC]').change(function() {
+        $( "p[id=cvss_AC]" ).text( $(this).attr('id') );
+        own_calc_cvss();
+        own_calc_fin();
+    });
+    $('input:radio[name=PR]').change(function() {
+        $( "p[id=cvss_PR]" ).text( $(this).attr('id') );
+        own_calc_cvss();
+        own_calc_fin();
+    });
+    $('input:radio[name=UI]').change(function() {
+        $( "p[id=cvss_UI]" ).text( $(this).attr('id') );
+        own_calc_cvss();
+        own_calc_fin();
+    });
+    $('input:radio[name=S]').change(function() {
+        $( "p[id=cvss_S]" ).text( $(this).attr('id') );
+        own_calc_cvss();
+        own_calc_fin();
+    });
+    $('input:radio[name=C]').change(function() {
+        $( "p[id=cvss_C]" ).text( $(this).attr('id') );
+        own_calc_cvss();
+        own_calc_fin();
+    });
+    $('input:radio[name=I]').change(function() {
+        $( "p[id=cvss_I]" ).text( $(this).attr('id') );
+        own_calc_cvss();
+        own_calc_fin();
+    });
+    $('input:radio[name=A]').change(function() {
+        $( "p[id=cvss_A]" ).text( $(this).attr('id') );
+        own_calc_cvss();
+        own_calc_fin();
+    });
+    $('input:radio[name=RD]').change(function() {
+        $( "p[id=bis_RD]" ).text( $(this).attr('id') );
+        own_calc_bis_imp();
+        own_calc_fin();
+    });
+    $('input:radio[name=FD]').change(function() {
+        $( "p[id=bis_FD]" ).text( $(this).attr('id') );
+        own_calc_bis_imp();
+        own_calc_fin();
+    });
+    $('input:radio[name=NC]').change(function() {
+        $( "p[id=bis_NC]" ).text( $(this).attr('id') );
+        own_calc_bis_imp();
+        own_calc_fin();
+    });
+    $('input:radio[name=PV]').change(function() {
+        $( "p[id=bis_PV]" ).text( $(this).attr('id') );
+        own_calc_bis_imp();
+        own_calc_fin();
+    });
+
+});
+
+
+
+
+own_calc_cvss = function (){
+    result_cvss_calc = CVSS.calculateCVSSFromVector($( "div[id=Result_cvss]").text().slice(0,-1) + add_to_end);
+    // console.log(result_cvss_calc)
+    $( "div[id=level_vuln_cvss]").text(result_cvss_calc.baseSeverity);
+    $( "span[id=score_cvss]").text(result_cvss_calc.baseMetricScore);
+};
+own_calc_bis_imp = function (){
+    result_bis_imp_calc = BIS_IMP.calculateBisImpFromVector($( "div[id=Result_bis_imp]").text().slice(0,-1));
+    // console.log(result_bis_imp_calc)
+    $( "div[id=level_vuln_bis_imp]").text(result_bis_imp_calc.level);
+    $( "span[id=score_bis_imp]").text(result_bis_imp_calc.score);
+}
+own_calc_fin = function (){
+    fin_res_score = (parseFloat(result_cvss_calc.baseMetricScore) + parseFloat(result_bis_imp_calc.score))/2;
+    $( "span[id=fin_level]").text(evalute_level_fin(fin_res_score));
+    $( "span[id=fin_score]").text(fin_res_score);
+    // console.log(fin_res_score)
+}
+
+evalute_level_fin =function(score){
+    if (score >= 0 &&  score <= 2.9) {
+        return "Informative";
+    };
+    if (score >= 3 &&  score <= 4.5) {
+        return "Low";
+    };
+    if (score >= 4.6 &&  score <= 6.9) {
+        return "Medium";
+    }; 
+    if (score >= 7.0 &&  score <= 8.9) {
+        return "High";
+    };
+    if (score >= 9.0 &&  score <= 10) {
+        return "Critical";
+    }; 
+};
+
+
+</script>
+<style type="text/css">
+    p {
+        display: inline-block;
+    }
+    form{
+        display: block;
+    }
+     .Level_and_score{
+            margin-top: 1em;
+     }
+    .Level_and_score div, .Level_and_score span{
+        margin-left: 1em;
+        display: inline-block;
+    }
+    #score_cvss{
+        padding-left: 1em;
+    }
+    h5 {
+        font-size: 15px;
+        margin: 0;
+        padding:0.5em 1em;
+    }
+
+</style>
+</head>
+<body>
+<form>
+    <h5>Attack Vector (AV)</h5>
+	<input type="radio" name="AV" id="AV:N" checked="checked" value="0.85">Network
+	<input type="radio" name="AV" id="AV:A" value="0.62">Adjacent
+    <input type="radio" name="AV" id="AV:L" value="0.55">Local
+    <input type="radio" name="AV" id="AV:P" value="0.2">Physical
+    <h5>Attack Complexity (AC)</h5>
+    <input type="radio" name="AC" id="AC:L" checked="checked" value="0.44">Low
+    <input type="radio" name="AC" id="AC:H" value="0.77">High
+    <h5>Privileges Required (PR)</h5>
+    <input type="radio" name="PR" id="PR:N" checked="checked" value="0.55">None
+    <input type="radio" name="PR" id="PR:L" value="0.2">Low
+    <input type="radio" name="PR" id="PR:H" value="0.55">High
+    <h5>User Interaction (UI)</h5>
+    <input type="radio" name="UI" id="UI:N" checked="checked" value="0.2">None
+    <input type="radio" name="UI" id="UI:R" value="0.55">Required
+    <h5>Scope (S)</h5>
+    <input type="radio" name="S" id="S:U" checked="checked" value="0.2">Low
+    <input type="radio" name="S" id="S:C" value="0.55">High
+    <h5>Confidentiality (C)</h5>
+    <input type="radio" name="C" id="C:N" checked="checked" value="0.2">None
+    <input type="radio" name="C" id="C:L" value="0.55">High
+    <input type="radio" name="C" id="C:H" value="0.2">Low
+    <h5>Integrity (I)</h5>
+    <input type="radio" name="I" id="I:N" checked="checked" value="0.55">None
+    <input type="radio" name="I" id="I:L" value="0.2">Low
+    <input type="radio" name="I" id="I:H" value="0.55">High
+    <h5>Availability (A)</h5>
+    <input type="radio" name="A" id="A:N" checked="checked" value="0.55">None
+    <input type="radio" name="A" id="A:L" value="0.2">Low
+    <input type="radio" name="A" id="A:H" value="0.55">High
+</form>
+<div class="Level_and_score">Results: <div id="level_vuln_cvss"></div><span id="score_cvss"></span>
+</div>
+<div id="Result_cvss"><p>CVSS:3.0/</p><p id="cvss_AV">AV:N</p>/<p id="cvss_AC">AC:L</p>/<p id="cvss_PR">PR:N</p>/<p id="cvss_UI">UI:N</p>/<p id="cvss_S">S:U</p>/<p id="cvss_C">C:N</p>/<p id="cvss_I">I:N</p>/<p id="cvss_A">A:N</p>
+</div>
+<form>
+    <h5>Financial Damager (FD)</h5>
+    <input type="radio" name="FD" id="FD:L" checked="checked" value="1">Less than the cost fixing vulnerability (1)
+    <input type="radio" name="FD" id="FD:M" value="3">Minor effect on annual profit (3)
+    <input type="radio" name="FD" id="FD:S" value="7">Significant effect on annual profit (7)
+    <input type="radio" name="FD" id="FD:B" value="9">Bankruptcy (9)
+    <h5>Reputation Damage (RD)</h5>
+    <input type="radio" name="RD" id="RD:M" checked="checked" value="1">Minimal damage (1)
+    <input type="radio" name="RD" id="RD:LM" value="4">Loss of major accounts (4)
+    <input type="radio" name="RD" id="RD:LG" value="5">Loss of goodwill (5)
+    <input type="radio" name="RD" id="RD:B" value="9">Brand damage (9)
+    <h5>Non-Compliance (NC)</h5>
+    <input type="radio" name="NC" id="NC:M" checked="checked" value="2">Minor violation (2)
+    <input type="radio" name="NC" id="NC:C" value="5">Clear violation (5)
+    <input type="radio" name="NC" id="NC:H" value="7">High profile violation (7)
+    <h5>Privacy Violation (PV))</h5>
+    <input type="radio" name="PV" id="PV:O" checked="checked" value="3">One individual (3)
+    <input type="radio" name="PV" id="PV:H" value="5">Hundreds of people (5)
+    <input type="radio" name="PV" id="PV:T" value="7">Thousands of people (7)
+    <input type="radio" name="PV" id="PV:M" value="9">Millions of people (9)
+</form>
+<div class="Level_and_score">Results: <div id="level_vuln_bis_imp"></div><span id="score_bis_imp"></span></div>
+<div id="Result_bis_imp"><p>BIS-IMP:1.0/</p><p id="bis_FD">FD:L</p>/<p id="bis_RD">RD:M</p>/<p id="bis_NC">NC:M</p>/<p id="bis_PV">PV:O</p>
+</div>
+<div class="Level_and_score"><h4>Result:<span id="fin_level"></span><span id="fin_score"></span></h4></div>
+</body>
+</html>
