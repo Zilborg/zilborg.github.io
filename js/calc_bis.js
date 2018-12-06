@@ -22,7 +22,7 @@ BIS_IMP.Weight = {
     O: 3,
     H: 5,
     T: 7,
-    M: 10
+    HT: 10
   },
 };
 BIS_IMP.calculateBisImpFromValues = function (FD, RD, NC, PV){
