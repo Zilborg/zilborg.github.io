@@ -24,61 +24,73 @@ $(document).ready(function() {
         $( "p[id=cvss_AV]" ).text( $(this).attr('id') );
         own_calc_cvss();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=AC]').change(function() {
         $( "p[id=cvss_AC]" ).text( $(this).attr('id') );
         own_calc_cvss();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=PR]').change(function() {
         $( "p[id=cvss_PR]" ).text( $(this).attr('id') );
         own_calc_cvss();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=UI]').change(function() {
         $( "p[id=cvss_UI]" ).text( $(this).attr('id') );
         own_calc_cvss();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=S]').change(function() {
         $( "p[id=cvss_S]" ).text( $(this).attr('id') );
         own_calc_cvss();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=C]').change(function() {
         $( "p[id=cvss_C]" ).text( $(this).attr('id') );
         own_calc_cvss();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=I]').change(function() {
         $( "p[id=cvss_I]" ).text( $(this).attr('id') );
         own_calc_cvss();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=A]').change(function() {
         $( "p[id=cvss_A]" ).text( $(this).attr('id') );
         own_calc_cvss();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=RD]').change(function() {
         $( "p[id=bis_RD]" ).text( $(this).attr('id') );
         own_calc_bis_imp();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=FD]').change(function() {
         $( "p[id=bis_FD]" ).text( $(this).attr('id') );
         own_calc_bis_imp();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=NC]').change(function() {
         $( "p[id=bis_NC]" ).text( $(this).attr('id') );
         own_calc_bis_imp();
         own_calc_fin();
+        own_collect_all_results();
     });
     $('input:radio[name=PV]').change(function() {
         $( "p[id=bis_PV]" ).text( $(this).attr('id') );
         own_calc_bis_imp();
         own_calc_fin();
+        own_collect_all_results();
     });
 
 });
@@ -103,6 +115,9 @@ own_calc_fin = function (){
 //    console.log(result_cvss_calc)
     $( "span[id=fin_score]").text(fin_res_score);
 //    console.log(fin_res_score)
+}
+own_collect_all_results =function() {
+    $('textarea#all_fin_results').val($("span[id=fin_level]").text() + " = " + $.trim($( "span[id=fin_score]").text()) + "\n" + $.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text() + "\n" + $.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())))
 }
 
 evalute_level_fin =function(score){

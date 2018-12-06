@@ -43,6 +43,9 @@ body {
   background-color: #f0f5f8;
 }
 
+textarea{
+  font-size: 12px;
+}
 .wrapper {
   max-width: 700px;
   padding: 35px 0;

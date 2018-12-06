@@ -84,13 +84,15 @@
   </div>
 </form>
 <div class="container">
-  <div class="row ml-1 mb-3">
+  <div class="row mb-3">
+    <div class="col">
       <div class="Level_and_score">Results: <div id="level_vuln_cvss"></div><span id="score_cvss"></span>
       </div>
-      <div id="Result_cvss"><p>CVSS:3.0/</p><p id="cvss_AV">AV:N</p>/<p id="cvss_AC">AC:L</p>/<p id="cvss_PR">PR:N</p>/<p id="cvss_UI">UI:N</p>/<p id="cvss_S">S:U</p>/<p id="cvss_C">C:N</p>/<p id="cvss_I">I:N</p>/<p id="cvss_A">A:N</p>
+      <div class="d-inline" id="Result_cvss"><p>CVSS:3.0/</p><p id="cvss_AV">AV:N</p>/<p id="cvss_AC">AC:L</p>/<p id="cvss_PR">PR:N</p>/<p id="cvss_UI">UI:N</p>/<p id="cvss_S">S:U</p>/<p id="cvss_C">C:N</p>/<p id="cvss_I">I:N</p>/<p id="cvss_A">A:N</p>
       </div>
-          <button class="btn btn-outline-primary btn-sm" onclick="copyToClipboard_cvss()">Copy</button>
+          <div class="d-inline"><button class="btn btn-outline-primary btn-sm" onclick="copyToClipboard_cvss()">Copy</button></div>
     </div>
+  </div>
 </div>
 <form>
   <div class="container">
@@ -129,18 +131,31 @@
     </div>
   </div>
 </form>
-<div class="container">
+<!-- <div class="container">
   <div class="row ml-1 mb-3">
     <div class="Level_and_score">Results: <div id="level_vuln_bis_imp"></div><span id="score_bis_imp"></span></div>
     <div id="Result_bis_imp"><p>BIS-IMP:1.0/</p><p id="bis_FD">FD:L</p>/<p id="bis_RD">RD:M</p>/<p id="bis_NC">NC:M</p>/<p id="bis_PV">PV:O</p>
     </div><button class="btn btn-outline-primary btn-sm" onclick="copyToClipboard_bis_imp()">Copy</button>
   </div>
-</div>
+</div> -->
  <div class="container"> 
-  <div class="row ml-1 mb-3">
-    <div id="fin_res_bold">Result:<span id="fin_level"></span><span id="fin_score"></span></div>
-    <button  class="d-inline btn btn-outline-primary btn-sm"
-            onclick="copyToClipboard_fin_res()">Copy</button>
+  <div class="row  mb-3">
+    <div class="col">
+
+        <div class="Level_and_score">Results: <div id="level_vuln_bis_imp"></div><span id="score_bis_imp"></span></div>
+        <div>
+            <div class="d-inline" id="Result_bis_imp"><p>BIS-IMP:1.0/</p><p id="bis_FD">FD:L</p>/<p id="bis_RD">RD:M</p>/<p id="bis_NC">NC:M</p>/<p id="bis_PV">PV:O</p>
+            </div>
+            <div class="d-inline"><button class="btn btn-outline-primary btn-sm" onclick="copyToClipboard_bis_imp()">Copy</button></div>
+        </div>
+        <div class="mt-2">
+            <div class="d-inline" id="fin_res_bold">Result:<span id="fin_level"></span><span id="fin_score"></span></div>
+            <div class="d-inline"><button  class="btn btn-outline-primary btn-sm" onclick="copyToClipboard_fin_res()">Copy</button></div>
+        </div>
+    </div>
+    <div class="col">
+        <textarea rows="4" cols="40" id="all_fin_results" name="text"></textarea>
+    </div>
    </div>
   </div>
 </body>
