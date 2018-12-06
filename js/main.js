@@ -125,21 +125,21 @@ evalute_level_fin =function(score){
 function copyToClipboard_cvss() {
     var $temp = $("<input>");
     $("body").append($temp);
-    $temp.val($( "div[id=Result_cvss]").text().slice(0,-1) + " = " + $( "span[id=score_cvss]").text()).select();
+    $temp.val($.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text())).select();
     document.execCommand("copy");
     $temp.remove();
 }
 function copyToClipboard_bis_imp() {
     var $temp = $("<input>");
     $("body").append($temp);
-    $temp.val($( "div[id=Result_bis_imp]").text().slice(0,-1) + " = " + $( "span[id=score_bis_imp]").text()).select();
+    $temp.val($.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())).select();
     document.execCommand("copy");
     $temp.remove();
 }
 function copyToClipboard_fin_res() {
     var $temp = $("<input>");
     $("body").append($temp);
-    $temp.val($( "span[id=fin_level]").text() + " = " + $( "span[id=fin_score]").text()).select();
+    $temp.val($.trim($( "span[id=fin_level]").text()) + " = " + $.trim($( "span[id=fin_score]").text())).select();
     document.execCommand("copy");
     $temp.remove();
 }

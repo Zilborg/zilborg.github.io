@@ -5,24 +5,24 @@ BIS_IMP.Weight = {
     L: 1,
     M: 3,
     S: 7,
-    B: 9
+    B: 10
   },
   RD: {
     M: 1,
     LM: 4,
     LG: 5,
-    B: 9
+    B: 10
   },
   NC: {
     M: 2,
-    C: 5,
-    H: 7
+    C: 6,
+    H: 10
   },
   PV: {
     O: 3,
     H: 5,
     T: 7,
-    M: 9
+    M: 10
   },
 };
 BIS_IMP.calculateBisImpFromValues = function (FD, RD, NC, PV){
@@ -37,7 +37,7 @@ BIS_IMP.calculateBisImpFromValues = function (FD, RD, NC, PV){
   if (BIS_IMP.result >= 4 &&  BIS_IMP.result <= 6) {
     BIS_IMP.level = "Medium";
   };
-   if (BIS_IMP.result >= 7 &&  BIS_IMP.result <= 9) {
+   if (BIS_IMP.result >= 7 &&  BIS_IMP.result <= 10) {
     BIS_IMP.level = "High";
   }; 
   return {
