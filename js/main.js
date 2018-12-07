@@ -16,7 +16,8 @@ $(window).on('load', function() {
     $('input:radio[id="PV:O"]').prop('checked', true);
     own_calc_cvss();
     own_calc_bis_imp();
-    own_calc_fin();     
+    own_calc_fin();  
+    own_collect_all_results();
 });
     var result;
 $(document).ready(function() {
@@ -117,7 +118,7 @@ own_calc_fin = function (){
 //    console.log(fin_res_score)
 }
 own_collect_all_results =function() {
-    $('textarea#all_fin_results').val($("span[id=fin_level]").text() + " = " + $.trim($( "span[id=fin_score]").text()) + "\n" + $.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text() + "\n" + $.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())))
+    $('textarea#all_fin_results').val("** " + $("span[id=fin_level]").text() + " = " + $.trim($( "span[id=fin_score]").text()) + "\n** " + $.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text() + "\n** " + $.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())))
 }
 
 evalute_level_fin =function(score){
@@ -158,3 +159,9 @@ function copyToClipboard_fin_res() {
     document.execCommand("copy");
     $temp.remove();
 }
+function copyToClipboard_collected_res() {
+  console.log($('textarea#all_fin_results').val())
+    $('textarea#all_fin_results').select();
+    document.execCommand("copy");
+}
+
