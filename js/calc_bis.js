@@ -31,10 +31,10 @@ BIS_IMP.calculateBisImpFromValues = function (FD, RD, NC, PV){
   var metricWeightNC = BIS_IMP.Weight.NC[NC];
   var metricWeightPV = BIS_IMP.Weight.PV[PV];
   BIS_IMP.result = (metricWeightFD + metricWeightRD + metricWeightNC + metricWeightPV)/4
-  if (BIS_IMP.result >= 0 &&  BIS_IMP.result <= 5) {
+  if (BIS_IMP.result >= 0 &&  BIS_IMP.result < 4) {
     BIS_IMP.level = "Low";
   };
-  if (BIS_IMP.result >= 4 &&  BIS_IMP.result <= 6) {
+  if (BIS_IMP.result >= 4 &&  BIS_IMP.result < 7) {
     BIS_IMP.level = "Medium";
   };
    if (BIS_IMP.result >= 7 &&  BIS_IMP.result <= 10) {
