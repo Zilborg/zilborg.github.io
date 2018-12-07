@@ -122,16 +122,16 @@ own_collect_all_results =function() {
 }
 
 evalute_level_fin =function(score){
-    if (score >= 0 &&  score <= 2.9) {
+    if (score >= 0 &&  score < 3.0) {
         return "Informative";
     };
-    if (score >= 3 &&  score <= 4.5) {
+    if (score >= 3 &&  score < 4.5) {
         return "Low";
     };
-    if (score >= 4.6 &&  score <= 6.9) {
+    if (score >= 4.5 &&  score < 7.0) {
         return "Medium";
     }; 
-    if (score >= 7.0 &&  score <= 8.9) {
+    if (score >= 7.0 &&  score < 9.0) {
         return "High";
     };
     if (score >= 9.0 &&  score <= 10) {
