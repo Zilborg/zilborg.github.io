@@ -7,8 +7,11 @@ p {
     display: inline-block;
 }
 .btn {
-  margin-left: 19em;
+  margin-left: 1em;
   margin-top: -5px
+}
+.btn-end{
+  margin-left: 19em;
 }
 
 #fin_res_bold{

@@ -22,23 +22,7 @@ $(window).on('load', function() {
     var result;
 $(document).ready(function() {
     $('input:radio[name=AV]').change(function() {
-//        var idVal = $(this).attr("id");
         $( "p[id=cvss_AV]" ).text( $(this).attr("id") );
-//        $("label[for='"+idVal+"']").removeClass();
-//        switch(idVal){
-//          case "AV:N":
-//            $("label[for='"+idVal+"']").addClass("radio__label ch_color_lab_red");
-//            break;
-//          case "AV:A":
-//            $("label[for='"+idVal+"']").addClass("radio__label ch_color_lab_orange");
-//            break;
-//          case "AV:L":
-//            $("label[for='"+idVal+"']").addClass("radio__label ch_color_lab_green");
-//            break;
-//          case "AV:P":
-//            $("label[for='"+idVal+"']").addClass("radio__label");
-//            break;
-//        };
         own_calc_cvss();
         own_calc_fin();
         own_collect_all_results();
@@ -180,7 +164,7 @@ evalute_level_fin =function(score){
 //    $temp.remove();
 //}
 function copyToClipboard_collected_res() {
-  console.log($('textarea#all_fin_results').val())
+//  conßsole.log($('textarea#all_fin_results').val())
     $('textarea#all_fin_results').select();
     document.execCommand("copy");
 }
@@ -199,3 +183,55 @@ function check_result_color(_level){
     _level.parent("div").css("color","#e63c3c")
   };  
 }
+
+function input_any_cvss_conf(){
+  var input_conf_cvss = $.trim(prompt("CVSS:3.0"));
+  arr_cvss_conf = input_conf_cvss.split("/");
+  if (arr_cvss_conf.slice(0,1) != "CVSS:3.0") {
+    console.log("Just copy CVSS:3.0 string here.");
+    return
+  };
+  if (arr_cvss_conf.length != "9") {
+    console.log("OK. It start from 'CVSS:3.0'. But it has to 8 parametrs.");
+    return
+  };
+  var bool_check;
+  $.each(arr_cvss_conf.slice(1), function(i, l){
+//    console.log(i + " = " + l);
+    if($('input:radio[id="' + l +'"]').length) {
+      $('input:radio[id="' + l +'"]').prop('checked', true);
+      $( "p[id=cvss_" + l.split(":").slice(0,1) + "]" ).text(l);
+    } else { 
+      alert("Can't find the parameter: " + l);
+    };
+  });
+  own_calc_cvss();
+  own_calc_fin();
+  own_collect_all_results();
+};
+
+function input_any_bis_imp_conf(){
+  var input_conf_cvss = $.trim(prompt("BIS-IMP:1.0"));
+  arr_cvss_conf = input_conf_cvss.split("/");
+  if (arr_cvss_conf.slice(0,1) != "BIS-IMP:1.0") {
+    console.log("Just copy BIS-IMP:1.0 string here.");
+    return
+  };
+  if (arr_cvss_conf.length != "5") {
+    console.log("OK. It start from 'BIS-IMP:1.0'. But it has to 4 parametrs.");
+    return
+  };
+  var bool_check;
+  $.each(arr_cvss_conf.slice(1), function(i, l){
+//    console.log(i + " = " + l);
+    if($('input:radio[id="' + l +'"]').length) {
+      $('input:radio[id="' + l +'"]').prop('checked', true);
+      $( "p[id=bis_" + l.split(":").slice(0,1) + "]" ).text(l);
+    } else { 
+      alert("Can't find the parameter: " + l);
+    };
+  });
+  own_calc_bis_imp();
+  own_calc_fin();
+  own_collect_all_results();
+};
