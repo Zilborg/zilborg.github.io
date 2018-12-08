@@ -22,7 +22,23 @@ $(window).on('load', function() {
     var result;
 $(document).ready(function() {
     $('input:radio[name=AV]').change(function() {
-        $( "p[id=cvss_AV]" ).text( $(this).attr('id') );
+//        var idVal = $(this).attr("id");
+        $( "p[id=cvss_AV]" ).text( $(this).attr("id") );
+//        $("label[for='"+idVal+"']").removeClass();
+//        switch(idVal){
+//          case "AV:N":
+//            $("label[for='"+idVal+"']").addClass("radio__label ch_color_lab_red");
+//            break;
+//          case "AV:A":
+//            $("label[for='"+idVal+"']").addClass("radio__label ch_color_lab_orange");
+//            break;
+//          case "AV:L":
+//            $("label[for='"+idVal+"']").addClass("radio__label ch_color_lab_green");
+//            break;
+//          case "AV:P":
+//            $("label[for='"+idVal+"']").addClass("radio__label");
+//            break;
+//        };
         own_calc_cvss();
         own_calc_fin();
         own_collect_all_results();
@@ -103,12 +119,14 @@ own_calc_cvss = function (){
     result_cvss_calc = CVSS.calculateCVSSFromVector($.trim($( "div[id=Result_cvss]").text()) + add_to_end);
     $( "div[id=level_vuln_cvss]").text(result_cvss_calc.baseSeverity);
     $( "span[id=score_cvss]").text(result_cvss_calc.baseMetricScore);
+    check_result_color($( "div[id=level_vuln_cvss]"));
 };
 own_calc_bis_imp = function (){
     result_bis_imp_calc = BIS_IMP.calculateBisImpFromVector($.trim($( "div[id=Result_bis_imp]").text()));
 //    console.log(result_bis_imp_calc)
     $( "div[id=level_vuln_bis_imp]").text(result_bis_imp_calc.level);
     $( "span[id=score_bis_imp]").text(result_bis_imp_calc.score);
+    check_result_color($( "div[id=level_vuln_bis_imp]"));
 }
 own_calc_fin = function (){
     fin_res_score = (parseFloat(result_cvss_calc.baseMetricScore) + parseFloat(result_bis_imp_calc.score))/2;
@@ -116,9 +134,11 @@ own_calc_fin = function (){
 //    console.log(result_cvss_calc)
     $( "span[id=fin_score]").text(fin_res_score);
 //    console.log(fin_res_score)
+    check_result_color($( "span[id=fin_level]"));
+  
 }
 own_collect_all_results =function() {
-    $('textarea#all_fin_results').val("** " + $("span[id=fin_level]").text() + " = " + $.trim($( "span[id=fin_score]").text()) + "\n** " + $.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text() + "\n** " + $.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())))
+    $('textarea#all_fin_results').val("* " + $("span[id=fin_level]").text() + " = " + $.trim($( "span[id=fin_score]").text()) + "\n* " + $.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text() + "\n* " + $.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())))
 }
 
 evalute_level_fin =function(score){
@@ -138,30 +158,44 @@ evalute_level_fin =function(score){
         return "Critical";
     }; 
 };
-function copyToClipboard_cvss() {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val($.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text())).select();
-    document.execCommand("copy");
-    $temp.remove();
-}
-function copyToClipboard_bis_imp() {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val($.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())).select();
-    document.execCommand("copy");
-    $temp.remove();
-}
-function copyToClipboard_fin_res() {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val($.trim($( "span[id=fin_level]").text()) + " = " + $.trim($( "span[id=fin_score]").text())).select();
-    document.execCommand("copy");
-    $temp.remove();
-}
+//function copyToClipboard_cvss() {
+//    var $temp = $("<input>");
+//    $("body").append($temp);
+//    $temp.val($.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text())).select();
+//    document.execCommand("copy");
+//    $temp.remove();
+//}
+//function copyToClipboard_bis_imp() {
+//    var $temp = $("<input>");
+//    $("body").append($temp);
+//    $temp.val($.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())).select();
+//    document.execCommand("copy");
+//    $temp.remove();
+//}
+//function copyToClipboard_fin_res() {
+//    var $temp = $("<input>");
+//    $("body").append($temp);
+//    $temp.val($.trim($( "span[id=fin_level]").text()) + " = " + $.trim($( "span[id=fin_score]").text())).select();
+//    document.execCommand("copy");
+//    $temp.remove();
+//}
 function copyToClipboard_collected_res() {
   console.log($('textarea#all_fin_results').val())
     $('textarea#all_fin_results').select();
     document.execCommand("copy");
 }
 
+function check_result_color(_level){
+  if (_level.text() == "None"){
+    _level.parent("div").css("color","#3c91e6")
+  };
+  if (_level.text() == "Low"){
+    _level.parent("div").css("color","#27aa31")
+  };
+  if (_level.text() == "Medium"){
+    _level.parent("div").css("color","#e6843c")
+  };  
+  if (_level.text() == "High"){
+    _level.parent("div").css("color","#e63c3c")
+  };  
+}
