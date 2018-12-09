@@ -184,8 +184,13 @@ function check_result_color(_level){
   };  
 }
 
-function input_any_cvss_conf(){
-  var input_conf_cvss = $.trim(prompt("CVSS:3.0"));
+function input_any_cvss_conf(template){
+  var input_conf_cvss;
+  if (template === undefined){
+    input_conf_cvss = $.trim(prompt("CVSS:3.0"));
+  } else {
+    input_conf_cvss = template;
+  }
   arr_cvss_conf = input_conf_cvss.split("/");
   if (arr_cvss_conf.slice(0,1) != "CVSS:3.0") {
     console.log("Just copy CVSS:3.0 string here.");
@@ -210,19 +215,24 @@ function input_any_cvss_conf(){
   own_collect_all_results();
 };
 
-function input_any_bis_imp_conf(){
-  var input_conf_cvss = $.trim(prompt("BIS-IMP:1.0"));
-  arr_cvss_conf = input_conf_cvss.split("/");
-  if (arr_cvss_conf.slice(0,1) != "BIS-IMP:1.0") {
+function input_any_bis_imp_conf(template){
+  var input_conf_bis_imp;
+  if (template === undefined){
+    input_conf_bis_imp = $.trim(prompt("BIS-IMP:1.0"));
+  } else {
+    input_conf_bis_imp = template;
+  }
+  arr_bis_imp_conf = input_conf_bis_imp.split("/");
+  if (arr_bis_imp_conf.slice(0,1) != "BIS-IMP:1.0") {
     console.log("Just copy BIS-IMP:1.0 string here.");
     return
   };
-  if (arr_cvss_conf.length != "5") {
+  if (arr_bis_imp_conf.length != "5") {
     console.log("OK. It start from 'BIS-IMP:1.0'. But it has to 4 parametrs.");
     return
   };
   var bool_check;
-  $.each(arr_cvss_conf.slice(1), function(i, l){
+  $.each(arr_bis_imp_conf.slice(1), function(i, l){
 //    console.log(i + " = " + l);
     if($('input:radio[id="' + l +'"]').length) {
       $('input:radio[id="' + l +'"]').prop('checked', true);
@@ -235,3 +245,5 @@ function input_any_bis_imp_conf(){
   own_calc_fin();
   own_collect_all_results();
 };
+
+

@@ -152,5 +152,61 @@
     </div>
    </div>
   </div>
+  <div class="templates container">
+    <div class="row">
+      <div class="col"><h3>Templates</h3></div>
+    </div>
+  
+      <div class="tabs">
+          <input type="radio" name="tab" id="tab1" checked="checked">
+          <label for="tab1">CVSS:3.0</label>
+          <input type="radio" name="tab" id="tab2">
+          <label for="tab2">BIS-IMP:1.0</label>
+
+          <div class="tab-content-wrapper">
+            <div id="tab-content-1" class="tab-content">
+              <div class="row">
+                <div class="col-1 templates_content">
+                <button type="button" class="btn btn-outline-dark" onclick="input_any_cvss_conf($( 'span[id=cvss_bruteforce]').text())">Use</button>
+                </div>
+                <div class="col-2">
+                    <span>Brute Force Attack</span>
+                </div>
+                <div class="col-4"><span id="cvss_bruteforce" class="cvss_or_bis_imp">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</span>
+                </div>
+                <div class="col-4"><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-8810">CVE-2017-8810</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1 templates_content">
+                  <button type="button" class="btn btn-outline-dark" onclick="input_any_cvss_conf($( 'span[id=cvss_login_enumeration]').text())">Use</button>
+                </div>
+                <div class="col-2">
+                    <span>Login enumeration</span>
+                </div>
+                <div class="col-4"><span id="cvss_login_enumeration" class="cvss_or_bis_imp">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N</span>
+                </div>
+                <div class="col-4"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-5682">CVE-2018-5682</a>
+                </div>
+              </div>
+            </div>
+            <div id="tab-content-2" class="tab-content">
+
+              <div class="row">
+                <div class="col-1 templates_content">
+                <button type="button" class="btn btn-outline-dark" onclick="input_any_bis_imp_conf($( 'span[id=bis_imp_Get_backoffice_access]').text())">Use</button>
+                </div>
+                <div class="col-4">
+                    <span>Get backoffice access</span>
+                </div>
+                <div class="col-4"><span id="bis_imp_Get_backoffice_access" class="cvss_or_bis_imp">BIS-IMP:1.0/FD:S/RD:B/NC:M/PV:HT</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    
+  </div>
 </body>
 </html>

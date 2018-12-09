@@ -25,6 +25,7 @@ h5 {
     margin: 0;
     padding: 0.5em 1em 0.5em 0px;
 }
+
 textarea{
   font-size: 12px;
 }
@@ -198,3 +199,108 @@ body {
 .color-blue{
   color: #3c91e6;
 }
+
+
+/*Templates block*/
+.templates{
+  margin-top: 40px;
+}
+.templates h3{
+  font: 400 28px Helvetica, Arial, sans-serif;
+  line-height: 0.8em;
+}
+.templates_content {
+  font: 300 14px/20px Helvetica, Arial, sans-serif;
+}
+.templates_content .btn{
+  font-size: 1em;
+  line-height: 10px;
+  margin-top: 2px;
+}
+
+ span.cvss_or_bis_imp{
+  font: 300 17px Helvetica, Arial, sans-serif;
+  color: rgb(128, 128, 128);
+}
+
+/*Tabs*/
+
+.tabs {
+  width: 100%;
+}
+.tabs input[type=radio] {
+  display: none; 
+}
+.tabs label {
+  transition: background 0.4s ease-in-out, height 0.2s linear;
+  display: inline-block;
+  cursor: pointer;
+
+  font: 300 15px Helvetica, Arial, sans-serif;
+  color: #434d4c;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 1.6em; 
+}
+.tabs label:last-of-type {
+  border-bottom: none; 
+}
+.tabs label:hover {
+  color:#3c91e6;
+}
+@media screen and (max-width: 1600px) {
+.tabs label {
+  width: 15%; } 
+}
+@media screen and (max-width: 900px) {
+.tabs label {
+  width: 20%; 
+  } 
+}
+@media screen and (max-width: 600px) {
+.tabs label {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #C7C6C4;
+  border-radius: 0; 
+} 
+}
+@media screen and (max-width: 600px) {
+.tabs {
+  margin: 0; 
+} 
+}
+
+#tab1:checked + label, #tab2:checked + label, #tab3:checked + label, #tab4:checked + label {
+/*  background: #2EBEB9;*/
+  border-bottom: #3c91e6 2px solid;
+}
+
+.tab-content {
+  position: absolute;
+  top: -9999px;
+  padding: 0px 0px;
+}
+
+.tab-content-wrapper{
+  background: #f0f5f8;
+/*  border-top: #2EBEB9 5px solid;*/
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 0px;
+  
+}
+@media screen and (max-width: 600px) {
+.tab-content-wrapper, .tab1-content-wrapper {
+  border: none;
+  border-radius: 0; 
+} 
+}
+
+#tab1:checked ~ .tab-content-wrapper #tab-content-1, #tab2:checked ~ .tab-content-wrapper #tab-content-2, #tab3:checked ~ .tab-content-wrapper #tab-content-3, #tab4:checked ~ .tab-content-wrapper #tab-content-4 {
+  position: relative;
+  top: 0px;
+ }
+
