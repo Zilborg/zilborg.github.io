@@ -12,6 +12,8 @@ p {
 }
 .btn-end{
   margin-left: 19em;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #fin_res_bold{
@@ -219,8 +221,9 @@ body {
 }
 
  span.cvss_or_bis_imp{
-  font: 300 17px Helvetica, Arial, sans-serif;
+  font: 300 14px Helvetica, Arial, sans-serif;
   color: rgb(128, 128, 128);
+  vertical-align: middle;
 }
 
 /*Tabs*/
