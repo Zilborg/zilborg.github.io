@@ -93,7 +93,6 @@ $(document).ready(function() {
         own_calc_fin();
         own_collect_all_results();
     });
-
 });
 
 
@@ -245,5 +244,6 @@ function input_any_bis_imp_conf(template){
   own_calc_fin();
   own_collect_all_results();
 };
+
 
 
