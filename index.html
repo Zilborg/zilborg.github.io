@@ -97,38 +97,37 @@
     </div>
   </div>
 </div>
-<form>
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="radio__container should_block">
-          <h5>Финансовые потери (FD)</h5>
-          <input type="radio" name="FD"  class="radio" id="FD:L" value="1"><label class="radio__label" for="FD:L">Меньше затрат на устранение уязвимости (1)</label>
-          <input type="radio" name="FD"  class="radio" id="FD:M" value="3"><label class="radio__label ch_color_lab_green" for="FD:M">Незначительное влияние на годовую прибыль (3)</label>
-          <input type="radio" name="FD"  class="radio" id="FD:S" value="7"><label class="radio__label ch_color_lab_orange" for="FD:S">Значительное влияние на годовую прибыль (7)</label>
-          <input type="radio" name="FD"  class="radio" id="FD:B" value="10"><label class="radio__label ch_color_lab_red" for="FD:B">Банкротство (10)</label>
+          <h5>Financial Damager (FD)</h5>
+          <input type="radio" name="FD"  class="radio" id="FD:L" value="1"><label class="radio__label" for="FD:L">Less than the cost fixing vulnerability (1)</label>
+          <input type="radio" name="FD"  class="radio" id="FD:M" value="3"><label class="radio__label ch_color_lab_green" for="FD:M">Minor effect on annual profit (3)</label>
+          <input type="radio" name="FD"  class="radio" id="FD:S" value="7"><label class="radio__label ch_color_lab_orange" for="FD:S">Significant effect on annual profit (7)</label>
+          <input type="radio" name="FD"  class="radio" id="FD:B" value="10"><label class="radio__label ch_color_lab_red" for="FD:B">Bankruptcy (10)</label>
         </div>
         <div class="radio__container should_block">
-          <h5> Ущерб репутации (RD)</h5>
-          <input type="radio" name="RD"  class="radio" id="RD:M" value="1"><label class="radio__label" for="RD:M">Минимальный урон (1)</label>
-          <input type="radio" name="RD"  class="radio" id="RD:LM" value="4"><label class="radio__label ch_color_lab_green" for="RD:LM">Потеря основных счетов (4)</label>
-          <input type="radio" name="RD"  class="radio" id="RD:LG" value="5"><label class="radio__label ch_color_lab_orange" for="RD:LG">Потеря деловой репутации (5)</label>
-          <input type="radio" name="RD"  class="radio" id="RD:B" value="10"><label class="radio__label ch_color_lab_red" for="RD:B">Сильный ущерб бренду (10)</label>
+          <h5>Reputation Damage (RD)</h5>
+          <input type="radio" name="RD"  class="radio" id="RD:M" value="1"><label class="radio__label" for="RD:M">Minimal damage (1)</label>
+          <input type="radio" name="RD"  class="radio" id="RD:LM" value="4"><label class="radio__label ch_color_lab_green" for="RD:LM">Loss of major accounts (4)</label>
+          <input type="radio" name="RD"  class="radio" id="RD:LG" value="5"><label class="radio__label ch_color_lab_orange" for="RD:LG">Loss of goodwill (5)</label>
+          <input type="radio" name="RD"  class="radio" id="RD:B" value="10"><label class="radio__label ch_color_lab_red" for="RD:B">Brand damage (10)</label>
         </div>
       </div>
       <div class="col">
         <div class="radio__container should_block">
-          <h5> Несоблюдение внешних регуляторов, законов, приказов и т.д.  (NC)</h5>
-          <input type="radio" name="NC"  class="radio" id="NC:M"value="2"><label class="radio__label" for="NC:M">Незначительное нарушение/выговоры (2)</label>
-          <input type="radio" name="NC"  class="radio" id="NC:C" value="6"><label class="radio__label ch_color_lab_orange" for="NC:C">Явное нарушение/штрафы (6)</label>
-          <input type="radio" name="NC"  class="radio" id="NC:H" value="10"><label class="radio__label ch_color_lab_red" for="NC:H">Значительное нарушение/санкции (10)</label>
+          <h5>Non-Compliance (NC)</h5>
+          <input type="radio" name="NC"  class="radio" id="NC:M"value="2"><label class="radio__label" for="NC:M">Minor violation (2)</label>
+          <input type="radio" name="NC"  class="radio" id="NC:C" value="6"><label class="radio__label ch_color_lab_orange" for="NC:C">Clear violation (6)</label>
+          <input type="radio" name="NC"  class="radio" id="NC:H" value="10"><label class="radio__label ch_color_lab_red" for="NC:H">High profile violation (10)</label>
         </div>
         <div class="radio__container should_block">
-          <h5>Сколько клиентов пострадает в ходе использования уязвимости (PV)</h5>
-          <input type="radio" name="PV"  class="radio" id="PV:O" value="3"><label class="radio__label" for="PV:O">Один (3)</label>
-          <input type="radio" name="PV"  class="radio" id="PV:H" value="5"><label class="radio__label ch_color_lab_green" for="PV:H">Больше сотни людей (5)</label>
-          <input type="radio" name="PV"  class="radio" id="PV:T" value="7"><label class="radio__label ch_color_lab_orange" for="PV:T">Тысячи людей (7)</label>
-          <input type="radio" name="PV"  class="radio" id="PV:HT" value="10"><label class="radio__label ch_color_lab_red" for="PV:HT">Сотни тысяч людей (10)</label>
+          <h5>Privacy Violation (PV)</h5>
+          <input type="radio" name="PV"  class="radio" id="PV:O" value="3"><label class="radio__label" for="PV:O">One individual (3)</label>
+          <input type="radio" name="PV"  class="radio" id="PV:H" value="5"><label class="radio__label ch_color_lab_green" for="PV:H">Hundreds of people (5)</label>
+          <input type="radio" name="PV"  class="radio" id="PV:T" value="7"><label class="radio__label ch_color_lab_orange" for="PV:T">Thousands of people (7)</label>
+          <input type="radio" name="PV"  class="radio" id="PV:HT" value="10"><label class="radio__label ch_color_lab_red" for="PV:HT">Hundreds of thousands of people (10)</label>
         </div>
       </div>
     </div>

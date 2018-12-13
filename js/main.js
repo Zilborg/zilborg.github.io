@@ -113,7 +113,12 @@ own_calc_bis_imp = function (){
 }
 own_calc_fin = function (){
     fin_res_score = (parseFloat(result_cvss_calc.baseMetricScore) + parseFloat(result_bis_imp_calc.score))/2;
-    $( "span[id=fin_level]").text(evalute_level_fin(fin_res_score));
+    if ($( "span[id=should_be_black]").text() == "Result:") {
+        $( "span[id=fin_level]").text(evalute_level_fin(fin_res_score, "en"));
+    } else if ( $( "span[id=should_be_black]").text() == "Уровень уязвимости:") {
+        $( "span[id=fin_level]").text(evalute_level_fin(fin_res_score, "ru"));
+    };
+    
 //    console.log(result_cvss_calc)
     $( "span[id=fin_score]").text(fin_res_score);
 //    console.log(fin_res_score)
@@ -124,22 +129,32 @@ own_collect_all_results =function() {
     $('textarea#all_fin_results').val("* " + $("span[id=fin_level]").text() + " = " + $.trim($( "span[id=fin_score]").text()) + "\n* " + $.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text() + "\n* " + $.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())))
 }
 
-evalute_level_fin =function(score){
-    if (score >= 0 &&  score < 3.0) {
-        return "Informative";
+evalute_level_fin =function(score, lang){
+    if (lang == "en"){
+        if (score >= 0 &&  score < 3.0) {
+            return "Informative";
+        } else if (score >= 3 &&  score < 4.5) {
+            return "Low";
+        } else if (score >= 4.5 &&  score < 7.0) {
+            return "Medium";
+        } else if (score >= 7.0 &&  score < 9.0) {
+            return "High";
+        }else if (score >= 9.0 &&  score <= 10) {
+            return "Critical";
+        };
+    } else if (lang == "ru") {
+        if (score >= 0 &&  score < 3.0) {
+            return "Информативный";
+        } else if (score >= 3 &&  score < 4.5) {
+            return "Низкий";
+        } else if (score >= 4.5 &&  score < 7.0) {
+            return "Средний";
+        } else if (score >= 7.0 &&  score < 9.0) {
+            return "Высокий";
+       } else if (score >= 9.0 &&  score <= 10) {
+            return "Критический";
+        };
     };
-    if (score >= 3 &&  score < 4.5) {
-        return "Low";
-    };
-    if (score >= 4.5 &&  score < 7.0) {
-        return "Medium";
-    }; 
-    if (score >= 7.0 &&  score < 9.0) {
-        return "High";
-    };
-    if (score >= 9.0 &&  score <= 10) {
-        return "Critical";
-    }; 
 };
 //function copyToClipboard_cvss() {
 //    var $temp = $("<input>");
@@ -169,18 +184,27 @@ function copyToClipboard_collected_res() {
 }
 
 function check_result_color(_level){
-  if (_level.text() == "None"){
+  if (_level.text() == "Informative"){
     _level.parent("div").css("color","#3c91e6")
-  };
-  if (_level.text() == "Low"){
+  } else if (_level.text() == "None"){
+    _level.parent("div").css("color","#3c91e6")
+  } else if (_level.text() == "Low"){
     _level.parent("div").css("color","#27aa31")
-  };
-  if (_level.text() == "Medium"){
+  } else if (_level.text() == "Medium"){
     _level.parent("div").css("color","#e6843c")
-  };  
-  if (_level.text() == "High"){
+  } else if (_level.text() == "High"){
     _level.parent("div").css("color","#e63c3c")
-  };  
+  } else if (_level.text() == "Информативный"){
+    _level.parent("div").css("color","#3c91e6")
+  } else if (_level.text() == "Не уязвимость"){
+    _level.parent("div").css("color","#3c91e6")
+  } else if (_level.text() == "Низкий"){
+    _level.parent("div").css("color","#27aa31")
+  } else if (_level.text() == "Средний"){
+    _level.parent("div").css("color","#e6843c")
+  } else if (_level.text() == "Высокий"){
+    _level.parent("div").css("color","#e63c3c")
+  }; 
 }
 
 function input_any_cvss_conf(template){
