@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VulnAss</title>
+<meta charset="utf-8"/>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="../js/mainC.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<form>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="radio__container">
+          <h5>Затрагивается Бэк (Back)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="Back" class="radio" id="Back:Y" value="1"><label class="radio__label ch_color_lab_red" for="Back:Y">Да</label>
+            <input type="radio" name="Back" class="radio" id="Back:N" value="0"><label class="radio__label ch_color_lab_orange" for="Back:N">Нет</label>
+          </div>
+        </div>
+        <div class="radio__container">
+          <h5>Затрагивается Фронт (Front)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="Front" class="radio" id="Front:Y" value="1" ><label class="radio__label ch_color_lab_red" for="Front:Y">Да</label>
+            <input type="radio" name="Front" class="radio" id="Front:N" value="0"><label class="radio__label ch_color_lab_orange" for="Front:N">Нет</label>
+          </div>
+        </div>
+        <!--Done-->
+        <div class="radio__container">
+          <h5>Была добавлена новая библиотека или сторонняя интеграция: (Dep)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="Dep" class="radio" id="Dep:Y" value="1"><label class="radio__label ch_color_lab_red   " for="Dep:Y">Да</label>
+            <input type="radio" name="Dep" class="radio" id="Dep:N" value="0"><label class="radio__label ch_color_lab_orange" for="Dep:N">Нет</label>
+          </div>
+        </div>
+        <!--Done-->
+        <div class="radio__container">
+          <h5>Сколько времени прошло с момента последнего dependency-check (OutDep)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="OutDep" class="radio" id="OutDep:Y" value="1"><label class="radio__label ch_color_lab_red   " for="OutDep:Y">Больше месяца</label>
+            <input type="radio" name="OutDep" class="radio" id="OutDep:N" value="0"><label class="radio__label ch_color_lab_orange" for="OutDep:N">Меньше месяца</label>
+          </div>
+        </div>
+        <!--Done-->
+        <div class="radio__container">
+          <h5>Имеется доступ снаружи (Ext)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="Ext" class="radio" id="Ext:Y" value="1"><label class="radio__label ch_color_lab_red   " for="Ext:Y">Да</label>
+            <input type="radio" name="Ext" class="radio" id="Ext:N" value="0"><label class="radio__label ch_color_lab_orange" for="Ext:N">Нет</label>
+          </div>
+        </div>
+        <!-- Done -->
+        <div class="radio__container">
+          <h5>Фича работает с финансовыми данными (PCI)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="PCI" class="radio" id="PCI:Y" value="1"><label class="radio__label ch_color_lab_red   " for="PCI:Y">Да</label>
+            <input type="radio" name="PCI" class="radio" id="PCI:N" value="0"><label class="radio__label ch_color_lab_orange" for="PCI:N">Нет</label>
+          </div>
+        </div>
+        <!-- Done -->
+        <div class="radio__container">
+          <h5>Фича работает с персональными данными (GPDR)</h5>
+          <div class="radio-inline">
+            <input type="radio" name="GPDR" class="radio" id="GPDR:Y" value="1"><label class="radio__label ch_color_lab_red   " for="GPDR:Y">Да</label>
+            <input type="radio" name="GPDR" class="radio" id="GPDR:N" value="0"><label class="radio__label ch_color_lab_orange" for="GPDR:N">Нет</label>
+          </div>
+        </div>
+        <!-- Done -->
+        <div class="radio__container">
+          <h5>Это первый релиз в бой?</h5>
+          <div class="radio-inline">
+            <input type="radio" name="SAST" class="radio" id="SAST:Y" value="1"><label class="radio__label ch_color_lab_red   " for="SAST:Y">Да</label>
+            <input type="radio" name="SAST" class="radio" id="SAST:N" value="0"><label class="radio__label ch_color_lab_orange" for="SAST:N">Нет</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="container">
+  <div class="row mb-3">
+    <div class="col">
+      <div class="Nessus"><div id="level_vuln_cvss">Nessus</div><span id="ness"></span>
+      <div class="Dependency-check"><div id="level_vuln_cvss">Dependency-check</div><span id="dependency"></span>
+      <div class="Security-Code-Scan"><div id="level_vuln_cvss">Security-Code-Scan</div>
+      <span id="scs"></span>
+      <div class="Logs"><div id="level_vuln_cvss">Проверка логов</div>
+      <span id="logs"></span>
+      </div>   
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
