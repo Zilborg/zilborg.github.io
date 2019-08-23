@@ -5,12 +5,16 @@ function convert_to_md() {
 
   if (/^[Cc]ontent-security-policy-report-only:[\s]*/g.test(CSP)) {
     HEAD = '### Content Security Policy (read only)\n|Direcrive| Value|\n|--|--';
-  };
-  if (/^[Cc]ontent-security-policy:[\s]*/g.test(CSP)) {
+    CSP = CSP.replace(/^[Cc]ontent-security-policy-report-only:[\s]*/g, ";");
+  } else if (/^[Cc]ontent-security-policy:[\s]*/g.test(CSP)) {
     HEAD = '### Content Security Policy\n|Direcrive| Value|\n|--|--';
+    CSP = CSP.replace(/^[Cc]ontent-security-policy:[\s]*/g, ";");
+  } else {
+    HEAD = '|Direcrive| Value|\n|--|--'
+    CSP = ';' + CSP
   };
-  CSP = CSP.replace(/^[Cc]ontent-security-policy-report-only:[\s]*/g, ";");
-  CSP= CSP.replace(/^[Cc]ontent-security-policy:[\s]*/g, ";");
+
+
   var Direcrives = ['base-uri', 'block-all-mixed-content', 'child-src', 'connect-src', 'default-src',
                     'disown-opener', 'font-src', 'form-action', 'frame-ancestors', 'frame-src',
                     'img-src', 'manifest-src', 'media-src', 'navigate-to', 'object-src', 'plugin-types',
