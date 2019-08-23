@@ -24,7 +24,7 @@ function convert_to_md() {
 
 
   for (var i = 0; i < Direcrives.length; i++) {
-    CSP= CSP.replace(new RegExp("[\s]*;[\n]?[\s]*" + Direcrives[i] + "[\s]?", "g"), "|\n|**" + Direcrives[i] + "**|");
+    CSP= CSP.replace(new RegExp("[\n ]*;[\n ]*" + Direcrives[i] + "[\s]?", "m"), "|\n|**" + Direcrives[i] + "**|");
   };
   CSP = CSP + "|"
   CSP = CSP.replace(/\| /g,"|")
