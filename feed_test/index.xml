@@ -7,25 +7,37 @@
 	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 	>
 
-    <channel>
-        <item>
-            <title>Lol Kek Cheburek</title>
-            <link>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/</link>
-                        <comments>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/#respond</comments>
-            
-            <dc:creator><![CDATA[Tara Seals]]></dc:creator>
-            <pubDate>Mon, 26 Apr 2021 18:12:03 +0000</pubDate>
-                    <category><![CDATA[Vulnerabilities]]></category>
-            <guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=165597</guid>
+<channel>
+	<title>Threatpost_lol</title>
+	<atom:link href="https://zilborg.github.io/feed_test/index.xml" rel="self" type="application/rss+xml" />
+	<link>https://zilborg.github.io/</link>
+	<description>blabla</description>
+	<lastBuildDate>Mon, 27 Apr 2021 18:13:15 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7</generator>
+    <atom:link rel="hub" href="https://pubsubhubbub.appspot.com"/><atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com"/>	
+    <item>
+		<title>Nvidia Warns: Severe Security Bugs in GPU Driver, vGPU Software</title>
+		<link>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/</link>
+					<comments>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/#respond</comments>
+		
+		<dc:creator><![CDATA[Tara Seals]]></dc:creator>
+		<pubDate>Mon, 26 Apr 2021 18:12:03 +0000</pubDate>
+				<category><![CDATA[Vulnerabilities]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=165597</guid>
 
-                        <description><![CDATA[The gaming- and AI-friendly graphics accelerators can open the door to a range of cyberattacks. ]]></description>
-            
-                        <wfw:commentRss>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/feed/</wfw:commentRss>
-                <slash:comments>0</slash:comments>
-            <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia.jpg" width="800" height="533"><media:keywords>full</media:keywords></media:content>
-            <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia.jpg" width="800" height="533"><media:keywords>large</media:keywords></media:content>
-            <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia-300x200.jpg" width="300" height="200"><media:keywords>medium</media:keywords></media:content>
-            <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
-	    </item>
+					<description><![CDATA[The gaming- and AI-friendly graphics accelerators can open the door to a range of cyberattacks. ]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia.jpg" width="800" height="533"><media:keywords>full</media:keywords></media:content>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia.jpg" width="800" height="533"><media:keywords>large</media:keywords></media:content>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia-300x200.jpg" width="300" height="200"><media:keywords>medium</media:keywords></media:content>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
 	</channel>
 </rss>
