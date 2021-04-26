@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+    <channel>
+        <item>
+            <title>Nvidia Warns: Severe Security Bugs in GPU Driver, vGPU Software</title>
+            <link>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/</link>
+                        <comments>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/#respond</comments>
+            
+            <dc:creator><![CDATA[Tara Seals]]></dc:creator>
+            <pubDate>Mon, 26 Apr 2021 18:12:03 +0000</pubDate>
+                    <category><![CDATA[Vulnerabilities]]></category>
+            <guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=165597</guid>
+
+                        <description><![CDATA[The gaming- and AI-friendly graphics accelerators can open the door to a range of cyberattacks. ]]></description>
+            
+                        <wfw:commentRss>https://threatpost.com/nvidia-security-bugs-gpu-vgpu/165597/feed/</wfw:commentRss>
+                <slash:comments>0</slash:comments>
+            <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia.jpg" width="800" height="533"><media:keywords>full</media:keywords></media:content>
+            <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia.jpg" width="800" height="533"><media:keywords>large</media:keywords></media:content>
+            <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia-300x200.jpg" width="300" height="200"><media:keywords>medium</media:keywords></media:content>
+            <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/02145658/nvidia-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	    </item>
+	</channel>
+</rss>
