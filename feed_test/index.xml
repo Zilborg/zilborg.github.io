@@ -1,42 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
-
+<rss version="2.0">
 <channel>
-	<title>Threatpost</title>
-	<atom:link href="https://threatpost.com/feed/" rel="self" type="application/rss+xml" />
-	<link>https://threatpost.com</link>
-	<description>The First Stop For Security News</description>
-	<lastBuildDate>Mon, 26 Apr 2021 20:29:08 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>
-	hourly	</sy:updatePeriod>
-	<sy:updateFrequency>
-	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7</generator>
-<atom:link rel="hub" href="https://pubsubhubbub.appspot.com"/><atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com"/>	<item>
-		<title>Lol Kek </title>
-		<link>https://threatpost.com/flubot-spyware-android-devices/165607/</link>
-					<comments>https://threatpost.com/flubot-spyware-android-devices/165607/#respond</comments>
-		
-		<dc:creator><![CDATA[Becky Bracken]]></dc:creator>
-		<pubDate>Mon, 26 Apr 2021 20:28:20 +0000</pubDate>
-				<category><![CDATA[Malware]]></category>
-		<category><![CDATA[Mobile Security]]></category>
-		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=165607</guid>
-
-					<description><![CDATA[The malware is spreading rapidly through ‘missed package delivery’ SMS texts, prompting urgent scam warnings from mobile carriers.]]></description>
-		
-					<wfw:commentRss>https://threatpost.com/flubot-spyware-android-devices/165607/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2021/02/09095202/android.jpg" width="800" height="530"><media:keywords>full</media:keywords></media:content>
-	</item>
+<title>Газета.Ru - Первая полоса</title>
+<link>https://www.gazeta.ru/</link>
+<description>Первая полоса одной из самых популярных российских интернет-газет. Российские и зарубежные новости в режиме он-лайн; важнейшие политические и экономические события в их развитии. Оригинальный взгляд, глубокий анализ и точный прогноз.</description>
+<pubDate>Tue, 27 Apr 2021 12:10:31 +0300</pubDate>
+<image>
+<url>https://img.gazeta.ru/files3/677/4728677/gazeta_logo.jpg</url>
+<title>Газета.Ru - Первая полоса</title>
+<link>https://www.gazeta.ru/</link>
+</image>
+<language>ru</language>
+<copyright>Gazeta.Ru</copyright>
+<webMaster>webmaster@gazeta.ru Webmaster</webMaster>
+<ttl>2</ttl>
+<item>
+<title>Сборная России победила США на юниорском чемпионате мира по хоккею</title>
+<link>https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml</link>
+<author>Эльвира Ондар</author>
+<category>Спорт</category>
+<pubDate>Tue, 27 Apr 2021 10:51:54 +0300</pubDate>
+<description>Юниорский чемпионат мира по хоккею открылся феноменальным матчем между хозяевами турнира - американцами - и сборной России. Юная "Красная машина" пропустила шесть шайб, но сумела перевернуть ход встречи и одержать победу в овертайме. Дубль оформил Иван Мирошниченко, которого миграционная служба США по неизвестным причинам отказывалась пускать на турнир.</description>
+<enclosure url="https://img.gazeta.ru/files3/844/13573844/Snimok_ekrana_2021-04-27_v_10.27-pic905-895x505-4289.png" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml</guid>
+</item>
+<rss2lj:owner xmlns:rss2lj="http://rss2lj.net/NS">gazeta_admin</rss2lj:owner>
 </channel>
 </rss>
