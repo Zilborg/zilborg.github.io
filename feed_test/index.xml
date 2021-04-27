@@ -1,20 +1,194 @@
 <rss version="2.0">
 <channel>
-<title>Газета.Ru - Новости дня</title>
-<link>https://www.gazeta.ru/news/lenta/</link>
-<description>Новости в режиме он-лайн из всех областей жизни. Собственная информация, а также сообщения крупнейших российских и мировых информационных агентств</description>
-<pubDate>Tue, 27 Apr 2021 12:04:07 +0300</pubDate>
+<title>Газета.Ru - Первая полоса</title>
+<link>https://www.gazeta.ru/</link>
+<description>Первая полоса одной из самых популярных российских интернет-газет. Российские и зарубежные новости в режиме он-лайн; важнейшие политические и экономические события в их развитии. Оригинальный взгляд, глубокий анализ и точный прогноз.</description>
+<pubDate>Tue, 27 Apr 2021 12:10:31 +0300</pubDate>
+<image>
+<url>https://img.gazeta.ru/files3/677/4728677/gazeta_logo.jpg</url>
+<title>Газета.Ru - Первая полоса</title>
+<link>https://www.gazeta.ru/</link>
+</image>
 <language>ru</language>
 <copyright>Gazeta.Ru</copyright>
-<ttl>1</ttl>
+<webMaster>webmaster@gazeta.ru Webmaster</webMaster>
+<ttl>2</ttl>
 <item>
-<title>Бла Бла</title>
-<link>https://www.gazeta.ru/army/news/2021/04/27/15912038.shtml</link>
-<author>Газета.Ru</author>
-<pubDate>Tue, 27 Apr 2021 12:03:34 +0300</pubDate>
-<description>Министр обороны России и Таджикистана Сергей Шойгу и Шерали Мирзо во вторник, 27 апреля, подпишут соглашение об объединении систем противовоздушной обороны двух стран. Об этом заявил российский министр на заседании Совета министров обороны ...</description>
-<enclosure url="https://img.gazeta.ru/files3/218/13431218/RIAN_6338781.HR-pic905-895x505-96961.jpg" type="image/jpeg"/>
-<guid>https://www.gazeta.ru/army/news/2021/04/27/15912038.shtml</guid>
-	</item>
-	</chanel>
-	</rss>
+<title>Сборная России победила США на юниорском чемпионате мира по хоккею</title>
+<link>https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml</link>
+<author>Эльвира Ондар</author>
+<category>Спорт</category>
+<pubDate>Tue, 27 Apr 2021 10:51:54 +0300</pubDate>
+<description>Юниорский чемпионат мира по хоккею открылся феноменальным матчем между хозяевами турнира - американцами - и сборной России. Юная "Красная машина" пропустила шесть шайб, но сумела перевернуть ход встречи и одержать победу в овертайме. Дубль оформил Иван Мирошниченко, которого миграционная служба США по неизвестным причинам отказывалась пускать на турнир.</description>
+<enclosure url="https://img.gazeta.ru/files3/844/13573844/Snimok_ekrana_2021-04-27_v_10.27-pic905-895x505-4289.png" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml</guid>
+</item>
+<item>
+<title>Депутаты и сенаторы назвали возможные места встречи Путина и Зеленского</title>
+<link>https://www.gazeta.ru/politics/2021/04/27_a_13573760.shtml</link>
+<author>Лидия Мисник</author>
+<category>Политика</category>
+<pubDate>Tue, 27 Apr 2021 09:09:53 +0300</pubDate>
+<description>Вопрос о возможной встрече президентов России и Украины Владимира Путина и Владимира Зеленского обрел актуальность после того, как главы двух государств сделали заявления о перспективах такого диалога. Пока официальных анонсов мероприятия не было, однако депутаты и сенаторы настроены весьма оптимистично. В разговоре с "Газетой.Ru" они назвали потенциальные время и место проведения российско-украинского саммита.</description>
+<enclosure url="https://img.gazeta.ru/files3/373/12495373/RIAN_5939688.HR-pic905-895x505-64123.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/politics/2021/04/27_a_13573760.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/politics/2021/04/27_a_13573760.shtml</guid>
+</item>
+<item>
+<title>Непомнящий сыграет с чемпионом мира Карлсеном в матче за мировую шахматную корону</title>
+<link>https://www.gazeta.ru/sport/2021/04/26/a_13573718.shtml</link>
+<author>Владимир Барский</author>
+<category>Спорт</category>
+<pubDate>Mon, 26 Apr 2021 23:44:08 +0300</pubDate>
+<description>Российский шахматист Ян Непомнящий досрочно выиграл турнир претендентов и сразится с чемпионом мира норвежцем Магнусом Карлсеном в матче за мировую шахматную корону. </description>
+<enclosure url="https://img.gazeta.ru/files3/730/13573730/shahmaty_2-pic905-895x505-5321.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/sport/2021/04/26/a_13573718.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/sport/2021/04/26/a_13573718.shtml</guid>
+</item>
+<item>
+<title>Лондон внес в антикоррупционный список 14 россиян</title>
+<link>https://www.gazeta.ru/politics/2021/04/26_a_13573592.shtml</link>
+<author>Андрей Ермолов</author>
+<category>Политика</category>
+<pubDate>Tue, 27 Apr 2021 00:55:25 +0300</pubDate>
+<description>Лондон расширил так называемый "список Магнитского", введя санкции против экс-полковника из ГУВД Москвы Артема Кузнецова, экс-следователя МВД Павла Карпова, бывшей главы инспекции ФНС N 28 по Москве Ольги Степановой, директора департамента Агентства по страхованию вкладов Андрея Павлова и других.</description>
+<enclosure url="https://img.gazeta.ru/files3/491/11810491/20171005_gaf_u39_917-pic905-895x505-75790.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/politics/2021/04/26_a_13573592.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/politics/2021/04/26_a_13573592.shtml</guid>
+</item>
+<item>
+<title>Экс-арбитр ФИФА Николаев - об удалении Ахметова в матче "Спартак" - ЦСКА</title>
+<link>https://www.gazeta.ru/sport/2021/04/26/a_13573580.shtml</link>
+<author>Анастасия Мартыненко, Данила Жиляев</author>
+<category>Спорт</category>
+<pubDate>Mon, 26 Apr 2021 23:06:46 +0300</pubDate>
+<description>Матч "Спартак" - ЦСКА запомнился спорным решением главного арбитра Павла Кукуяна удалить полузащитника армейского клуба Ильзата Ахметова. Бывший судья ФИФА Алексей Николаев в комментарии "Газете.Ru" разбирает эпизод, по итогам которого ЦСКА направил обращение в экспертно-судейскую комиссию. </description>
+<enclosure url="https://img.gazeta.ru/files3/270/13487270/RIAN_6468903.HR-pic905-895x505-7689.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/sport/2021/04/26/a_13573580.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/sport/2021/04/26/a_13573580.shtml</guid>
+</item>
+<item>
+<title>Эксперты рассказали о перспективах водородной энергетики в России</title>
+<link>https://www.gazeta.ru/business/2021/04/26/13573556.shtml</link>
+<author>Маргарита Соболь</author>
+<category>Бизнес</category>
+<pubDate>Tue, 27 Apr 2021 00:11:33 +0300</pubDate>
+<description>Россия может стать лидером по производству "зеленого" водорода, считает генеральный директор Международного солнечного альянса Аджай Матур. В южных регионах страны есть большой ресурсный потенциал для этого, считает эксперт. "Газета.Ru" разбиралась, сможет ли Россия занять место в новой энергетической нише.</description>
+<enclosure url="https://img.gazeta.ru/files3/586/13573586/Depositphotos_390971220_l-2015-pic905-895x505-48587.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/business/2021/04/26/13573556.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/business/2021/04/26/13573556.shtml</guid>
+</item>
+<item>
+<title>Путин обсудил с Макроном Донбасс и отношения с Чехией</title>
+<link>https://www.gazeta.ru/politics/2021/04/26_a_13573544.shtml</link>
+<author>Виктор Павлов</author>
+<category>Политика</category>
+<pubDate>Mon, 26 Apr 2021 22:51:43 +0300</pubDate>
+<description>Киев целенаправленно обостряет обстановку на линии соприкосновения в Донбассе и игнорирует положения Минских соглашений, сообщил президент России Владимир Путин в телефонном разговоре с французским коллегой Эммануэлем Макроном. Также Путин коснулся нынешнего состояния российско-чешских отношений, подчеркнув абсурдный характер выдвинутых Прагой в адрес России обвинений и предпринятых действий.</description>
+<enclosure url="https://img.gazeta.ru/files3/267/13192267/2in2-_1_-pic905-895x505-29596.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/politics/2021/04/26_a_13573544.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/politics/2021/04/26_a_13573544.shtml</guid>
+</item>
+<item>
+<title>В ЛГБТК-сообществе отказались помогать Кейтлин Дженнер</title>
+<link>https://www.gazeta.ru/lifestyle/style/2021/04/a_13573484.shtml</link>
+<author>Анна Виноградова</author>
+<category>Стиль</category>
+<pubDate>Mon, 26 Apr 2021 23:48:08 +0300</pubDate>
+<description>Представительница клана Кардашьян Кейтлин Дженнер, которая совершила трансгендерный переход в 2015 году, подверглась жесткой критике со стороны ЛГБТК-людей. Они отказались поддержать ее на выборах губернатора Калифорнии, в которых она намерена участвовать осенью 2021-го. Ей не могут простить симпатии к Дональду Трампу, от которых она давно отреклась.</description>
+<enclosure url="https://img.gazeta.ru/files3/496/13573496/20180304_gaf_u39_850-pic905-895x505-21540.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/lifestyle/style/2021/04/a_13573484.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/lifestyle/style/2021/04/a_13573484.shtml</guid>
+</item>
+<item>
+<title>Счетная палата оценила работу Корпорации МСП</title>
+<link>https://www.gazeta.ru/business/2021/04/26/13573406.shtml</link>
+<author>Рустем Фаляхов</author>
+<category>Бизнес</category>
+<pubDate>Tue, 27 Apr 2021 00:01:08 +0300</pubDate>
+<description>Еще до пандемии вклад малого и среднего бизнеса в экономику России сократился, а самих компаний МСП стало меньше. Зато сотрудники Корпорации МСП, ответственной за развитие соответсnвующего сегмента, установили себе облегченные показатели эффективности и завышали свои зарплаты, выявила Счетная палата.</description>
+<enclosure url="https://img.gazeta.ru/files3/628/13573628/RIAN_5635770.HR-pic905-895x505-81875.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/business/2021/04/26/13573406.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/business/2021/04/26/13573406.shtml</guid>
+</item>
+<item>
+<title>500 лет назад в битве с аборигенами погиб первооткрыватель Магеллан</title>
+<link>https://www.gazeta.ru/science/2021/04/26_a_13573388.shtml</link>
+<author>Дмитрий Окунев</author>
+<category>Наука</category>
+<pubDate>Tue, 27 Apr 2021 09:20:33 +0300</pubDate>
+<description>27 апреля 1521 года в схватке с туземцами филиппинского острова Мактан погиб знаменитый мореплаватель Фернан Магеллан, открывший пролив из Атлантики в Тихий океан. Командир экспедиции решил поддержать одного из местных правителей в междоусобной борьбе с другим, но не рассчитал сил своего отряда. Первое в истории кругосветное путешествие завершил соратник Магеллана, капитан Хуан Себастьян Элькано. Вместе с ним в Испанию вернулась лишь горстка моряков, встреченных как герои. </description>
+<enclosure url="https://img.gazeta.ru/files3/826/13573826/mag-pic905-895x505-44385.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/science/2021/04/26_a_13573388.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/science/2021/04/26_a_13573388.shtml</guid>
+</item>
+<item>
+<title>Правительство России рассматривает возможность ограничения экспорта бензина</title>
+<link>https://www.gazeta.ru/business/2021/04/26/13573316.shtml</link>
+<author>Тимур Хасанов</author>
+<category>Бизнес</category>
+<pubDate>Mon, 26 Apr 2021 21:25:47 +0300</pubDate>
+<description>Правительство намерено ограничить экспорт бензина, это ударит по нефтеперерабатывающему бизнесу. Обычные граждане, предприниматели и сектор торговли от этого решения только выиграют, считают эксперты. Впрочем, снижения цен ожидать не стоит, предупреждают они. </description>
+<enclosure url="https://img.gazeta.ru/files3/442/13573442/TASS_39514685-pic905-895x505-77158.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/business/2021/04/26/13573316.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/business/2021/04/26/13573316.shtml</guid>
+</item>
+<item>
+<title>Член Академии Константин Бронзит об "Оскаре" - победа "Земли кочевников"</title>
+<link>https://www.gazeta.ru/culture/2021/04/26/a_13573298.shtml</link>
+<author>Алексей Шевелев</author>
+<category>Культура</category>
+<pubDate>Mon, 26 Apr 2021 20:14:52 +0300</pubDate>
+<description>Член Американской киноакадемии Константин Бронзит не ожидал, что "Земля кочевников" станет лучшим фильмом по версии "Оскара". В разговоре с "Газетой.Ru" режиссер-мультипликатор рассказал, что думает об итогах премии, лауреатах в категориях "лучший полнометражный / короткометражный мультфильм" и критике академиков из-за Чедвика Боузмана, оставшегося без посмертной награды.</description>
+<enclosure url="https://img.gazeta.ru/files3/488/13572488/upload-2021-04-26T041931Z_937878088_RC2G3N9VZL6P_RTRMADP_3_AWARDS-OSCARS-pic905-895x505-56255.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/culture/2021/04/26/a_13573298.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/culture/2021/04/26/a_13573298.shtml</guid>
+</item>
+<item>
+<title>В МХАТ им. Горького высказались по поводу изменений в руководстве</title>
+<link>https://www.gazeta.ru/culture/2021/04/26/a_13573292.shtml</link>
+<author>Алексей Шевелев</author>
+<category>Культура</category>
+<pubDate>Mon, 26 Apr 2021 22:00:29 +0300</pubDate>
+<description>Эдуард Бояков и Захар Прилепин сохранят позиции художественного руководителя и его заместителя соответственно после изменения устава МХАТ им. Горького, заявили "Газете.Ru" в пресс-службе учреждения. Вместе с тем Бояков не будет параллельно выполнять обязанности директора. Ранее СМИ сообщили, что Минкульт вернул Татьяну Доронину к руководству театра из-за серьезных нарушений, в том числе в расходовании средств на оплату труда. Актер МХАТ Александр Титоренко, в свою очередь, сказал, что пока не знает о дальнейшей судьбе Боякова в театре.</description>
+<enclosure url="https://img.gazeta.ru/files3/304/13573304/RIAN_6382502.HR-pic905-895x505-3639.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/culture/2021/04/26/a_13573292.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/culture/2021/04/26/a_13573292.shtml</guid>
+</item>
+<item>
+<title>Режиссер рассказал о съемках фильма "Дуров" и неразвитости документального кино в России</title>
+<link>https://www.gazeta.ru/culture/2021/04/26/a_13573286.shtml</link>
+<author>Алина Минеева</author>
+<category>Культура</category>
+<pubDate>Mon, 26 Apr 2021 21:18:53 +0300</pubDate>
+<description>Документалист Родион Чепель представил первую кинобиографию основателя "ВКонтакте" и Telegram Павла Дурова. Во время подготовки материала для ленты режиссер общался с коллегами и знакомыми программиста, а затем летал к нему в Дубай показывать готовый фильм. В беседе с "Газетой.Ru" Чепель рассказал о сложностях производства проекта, его значении для российского документального кино и необходимости личной встречи с Дуровым.</description>
+<enclosure url="https://img.gazeta.ru/files3/502/13573502/TASS_00_23062927-pic905-895x505-92122.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/culture/2021/04/26/a_13573286.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/culture/2021/04/26/a_13573286.shtml</guid>
+</item>
+<item>
+<title>В Госдуме назвали условия для изменения закона о просветительской деятельности</title>
+<link>https://www.gazeta.ru/social/2021/04/26/13572848.shtml</link>
+<author>Яна Штурма</author>
+<category>Общество</category>
+<pubDate>Mon, 26 Apr 2021 18:26:58 +0300</pubDate>
+<description>С 1 июня 2021 года в России вступает в действие закон о просветительской деятельности. Законопроект еще на этапе рассмотрения вызвал негативный отклик у профессионального сообщества, а после того, как правительство вынесло на общественное обсуждение нормативно-правовые документы, заволновались и блогеры. В Госдуме призвали россиян подождать и посмотреть, как закон будет работать. В случае "перегибов" депутаты пообещали оперативно внести поправки.</description>
+<enclosure url="https://img.gazeta.ru/files3/376/13573376/Depositphotos_109021060_xl-2015-pic905-895x505-8197.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/social/2021/04/26/13572848.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/social/2021/04/26/13572848.shtml</guid>
+</item>
+<item>
+<title>Жители Елабуги пожаловались на незаконный приют для бездомных животных</title>
+<link>https://www.gazeta.ru/social/2021/04/26/13572836.shtml</link>
+<author>Екатерина Томова</author>
+<category>Общество</category>
+<pubDate>Mon, 26 Apr 2021 23:38:36 +0300</pubDate>
+<description>В Республике Татарстан жители города Елабуга на протяжении двух лет пытаются найти управу на двух женщин, которые устроили в частном доме передержку собак. По их словам, девушки не заботятся о животных, и с утра до вечера из дома раздается громкий вой - собаки дерутся между собой. Приют не зарегистрирован - но в соцсетях его владелицы организовали сбор средств на содержание животных. </description>
+<enclosure url="https://img.gazeta.ru/files3/520/13573520/RIAN_6236877.HR-pic905-895x505-2175.jpg" type="image/jpeg"/>
+<comments>https://www.gazeta.ru/social/2021/04/26/13572836.shtml#comments</comments>
+<guid isPermaLink="true">https://www.gazeta.ru/social/2021/04/26/13572836.shtml</guid>
+</item>
+<rss2lj:owner xmlns:rss2lj="http://rss2lj.net/NS">gazeta_admin</rss2lj:owner>
+</channel>
+</rss>
