@@ -14,14 +14,13 @@
 <webMaster>webmaster@gazeta.ru Webmaster</webMaster>
 <ttl>2</ttl>
 <item>
-  <title>Сборная России победила США на юниорском чемпионате мира </h4><script>alert(1)</script></title>
+  <title>Сборная России победила США на юниорском чемпионате мира <script>alert(1)</script></title>
 <link>https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml</link>
 <author>Эльвира Ондар</author>
 <category>Спорт</category>
 <pubDate>Tue, 27 Apr 2021 10:51:54 +0300</pubDate>
 <description>Юниорский че.<script>alert(1)</script></description>
-<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2021/02/09095202/android.jpg" width="800" height="530"><media:keywords>full</media:keywords></media:content>
-<enclosure url="https://img.gazeta.ru/files3/844/13573844/Snimok_ekrana_2021-04-27_v_10.27-pic905-895x505-4289.png" type="image/jpeg"/>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dialzi.github.io/logo.svg" width="800" height="530"><media:keywords>full</media:keywords></media:content>
 <comments>https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml#comments</comments>
 <guid isPermaLink="true">https://www.gazeta.ru/sport/2021/04/27/a_13573838.shtml</guid>
 </item>
