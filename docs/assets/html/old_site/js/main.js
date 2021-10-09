@@ -156,29 +156,8 @@ evalute_level_fin =function(score, lang){
         };
     };
 };
-//function copyToClipboard_cvss() {
-//    var $temp = $("<input>");
-//    $("body").append($temp);
-//    $temp.val($.trim($( "div[id=Result_cvss]").text()) + " = " + $.trim($("span[id=score_cvss]").text())).select();
-//    document.execCommand("copy");
-//    $temp.remove();
-//}
-//function copyToClipboard_bis_imp() {
-//    var $temp = $("<input>");
-//    $("body").append($temp);
-//    $temp.val($.trim($( "div[id=Result_bis_imp]").text()) + " = " + $.trim($( "span[id=score_bis_imp]").text())).select();
-//    document.execCommand("copy");
-//    $temp.remove();
-//}
-//function copyToClipboard_fin_res() {
-//    var $temp = $("<input>");
-//    $("body").append($temp);
-//    $temp.val($.trim($( "span[id=fin_level]").text()) + " = " + $.trim($( "span[id=fin_score]").text())).select();
-//    document.execCommand("copy");
-//    $temp.remove();
-//}
+
 function copyToClipboard_collected_res() {
-//  conßsole.log($('textarea#all_fin_results').val())
     $('textarea#all_fin_results').select();
     document.execCommand("copy");
 }
@@ -207,67 +186,67 @@ function check_result_color(_level){
   }; 
 }
 
-function input_any_cvss_conf(template){
-  var input_conf_cvss;
-  if (template === undefined){
-    input_conf_cvss = $.trim(prompt("CVSS:3.0"));
-  } else {
-    input_conf_cvss = template;
-  }
-  arr_cvss_conf = input_conf_cvss.split("/");
-  if (arr_cvss_conf.slice(0,1) != "CVSS:3.0") {
-    console.log("Just copy CVSS:3.0 string here.");
-    return
-  };
-  if (arr_cvss_conf.length != "9") {
-    console.log("OK. It start from 'CVSS:3.0'. But it has to 8 parametrs.");
-    return
-  };
-  var bool_check;
-  $.each(arr_cvss_conf.slice(1), function(i, l){
-//    console.log(i + " = " + l);
-    if($('input:radio[id="' + l +'"]').length) {
-      $('input:radio[id="' + l +'"]').prop('checked', true);
-      $( "p[id=cvss_" + l.split(":").slice(0,1) + "]" ).text(l);
-    } else { 
-      alert("Can't find the parameter: " + l);
-    };
-  });
-  own_calc_cvss();
-  own_calc_fin();
-  own_collect_all_results();
-};
+// function input_any_cvss_conf(template){
+//   var input_conf_cvss;
+//   if (template === undefined){
+//     input_conf_cvss = $.trim(prompt("CVSS:3.1"));
+//   } else {
+//     input_conf_cvss = template;
+//   }
+//   arr_cvss_conf = input_conf_cvss.split("/");
+//   if (arr_cvss_conf.slice(0,1) != "CVSS:3.1") {
+//     console.log("Just copy CVSS:3.1 string here.");
+//     return
+//   };
+//   if (arr_cvss_conf.length != "9") {
+//     console.log("OK. It start from 'CVSS:3.1'. But it has to 8 parametrs.");
+//     return
+//   };
+//   var bool_check;
+//   $.each(arr_cvss_conf.slice(1), function(i, l){
+// //    console.log(i + " = " + l);
+//     if($('input:radio[id="' + l +'"]').length) {
+//       $('input:radio[id="' + l +'"]').prop('checked', true);
+//       $( "p[id=cvss_" + l.split(":").slice(0,1) + "]" ).text(l);
+//     } else { 
+//       alert("Can't find the parameter: " + l);
+//     };
+//   });
+//   own_calc_cvss();
+//   own_calc_fin();
+//   own_collect_all_results();
+// };
 
-function input_any_bis_imp_conf(template){
-  var input_conf_bis_imp;
-  if (template === undefined){
-    input_conf_bis_imp = $.trim(prompt("BIS-IMP:1.0"));
-  } else {
-    input_conf_bis_imp = template;
-  }
-  arr_bis_imp_conf = input_conf_bis_imp.split("/");
-  if (arr_bis_imp_conf.slice(0,1) != "BIS-IMP:1.0") {
-    console.log("Just copy BIS-IMP:1.0 string here.");
-    return
-  };
-  if (arr_bis_imp_conf.length != "5") {
-    console.log("OK. It start from 'BIS-IMP:1.0'. But it has to 4 parametrs.");
-    return
-  };
-  var bool_check;
-  $.each(arr_bis_imp_conf.slice(1), function(i, l){
-//    console.log(i + " = " + l);
-    if($('input:radio[id="' + l +'"]').length) {
-      $('input:radio[id="' + l +'"]').prop('checked', true);
-      $( "p[id=bis_" + l.split(":").slice(0,1) + "]" ).text(l);
-    } else { 
-      alert("Can't find the parameter: " + l);
-    };
-  });
-  own_calc_bis_imp();
-  own_calc_fin();
-  own_collect_all_results();
-};
+// function input_any_bis_imp_conf(template){
+//   var input_conf_bis_imp;
+//   if (template === undefined){
+//     input_conf_bis_imp = $.trim(prompt("BIS-IMP:1.0"));
+//   } else {
+//     input_conf_bis_imp = template;
+//   }
+//   arr_bis_imp_conf = input_conf_bis_imp.split("/");
+//   if (arr_bis_imp_conf.slice(0,1) != "BIS-IMP:1.0") {
+//     console.log("Just copy BIS-IMP:1.0 string here.");
+//     return
+//   };
+//   if (arr_bis_imp_conf.length != "5") {
+//     console.log("OK. It start from 'BIS-IMP:1.0'. But it has to 4 parametrs.");
+//     return
+//   };
+//   var bool_check;
+//   $.each(arr_bis_imp_conf.slice(1), function(i, l){
+// //    console.log(i + " = " + l);
+//     if($('input:radio[id="' + l +'"]').length) {
+//       $('input:radio[id="' + l +'"]').prop('checked', true);
+//       $( "p[id=bis_" + l.split(":").slice(0,1) + "]" ).text(l);
+//     } else { 
+//       alert("Can't find the parameter: " + l);
+//     };
+//   });
+//   own_calc_bis_imp();
+//   own_calc_fin();
+//   own_collect_all_results();
+// };
 
 
 
