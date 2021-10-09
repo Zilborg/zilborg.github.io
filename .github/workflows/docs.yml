@@ -26,25 +26,21 @@ on:
 
 env:
   PYTHON_VERSION: 3.x
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
-  documentation:
+  deploy:
     name: Build documentation
     runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v2
-
       - name: Set up Python runtime
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-
       - name: Install Python dependencies
-        if: github.event.repository.fork == false
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           pip install git+https://${GH_TOKEN}@github.com/Zilborg/mkdocs-material-insiders.git
       - name: Deploy documentation
