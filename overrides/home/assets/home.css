@@ -265,11 +265,6 @@
     width: .9rem
 }
 
-[data-md-color-scheme=slate] .md-typeset .mdx-iconsearch-result__item img[src*=squidfunk] {
-    -webkit-filter: invert(1);
-    filter: invert(1)
-}
-
 .md-typeset .mdx-premium p {
     margin: 2em 0;
     text-align: center
