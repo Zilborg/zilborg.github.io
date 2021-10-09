@@ -42,8 +42,11 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install Python dependencies
+        if: github.event.repository.fork == false
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          pip install git+https://${{ secrets.GITHUB_TOKEN }}@github.com/zilborg/mkdocs-material-insiders.git
+          pip install git+https://${GH_TOKEN}@github.com/Zilborg/mkdocs-material-insiders.git
       - name: Deploy documentation
         # env:
         #   GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
