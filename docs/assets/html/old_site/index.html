@@ -6,7 +6,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="js/calc30.js"></script>
+<script src="js/calc31.js"></script>
 <script src="js/calc_bis.js"></script>
 <script src="js/main.js"></script>
 <script src="js/tooltips.js"></script>
@@ -91,9 +91,9 @@
     <div class="col">
       <div class="Level_and_score"><div id="level_vuln_cvss"></div><span id="score_cvss"></span>
       </div>
-      <div class="d-inline" id="Result_cvss"><p>CVSS:3.0/</p><p id="cvss_AV">AV:N</p>/<p id="cvss_AC">AC:L</p>/<p id="cvss_PR">PR:N</p>/<p id="cvss_UI">UI:N</p>/<p id="cvss_S">S:U</p>/<p id="cvss_C">C:N</p>/<p id="cvss_I">I:N</p>/<p id="cvss_A">A:N</p>
+      <div class="d-inline" id="Result_cvss"><p>CVSS:3.1/</p><p id="cvss_AV">AV:N</p>/<p id="cvss_AC">AC:L</p>/<p id="cvss_PR">PR:N</p>/<p id="cvss_UI">UI:N</p>/<p id="cvss_S">S:U</p>/<p id="cvss_C">C:N</p>/<p id="cvss_I">I:N</p>/<p id="cvss_A">A:N</p>
       </div>
-          <div class="d-inline"><button class="btn btn-outline-primary btn-sm" onclick="input_any_cvss_conf()">Input own</button></div>
+          <!-- <div class="d-inline"><button class="btn btn-outline-primary btn-sm" onclick="input_any_cvss_conf()">Input own</button></div> -->
     </div>
   </div>
 </div>
@@ -141,7 +141,7 @@
         <div>
             <div class="d-inline" id="Result_bis_imp"><p>BIS-IMP:1.0/</p><p id="bis_FD">FD:L</p>/<p id="bis_RD">RD:M</p>/<p id="bis_NC">NC:M</p>/<p id="bis_PV">PV:O</p>
             </div>
-            <div class="d-inline"><button class="btn btn-outline-primary btn-sm" onclick="input_any_bis_imp_conf()">Input own</button></div>
+            <!-- <div class="d-inline"><button class="btn btn-outline-primary btn-sm" onclick="input_any_bis_imp_conf()">Input own</button></div> -->
         </div>
         <div class="mt-2">
             <div class="d-inline" id="fin_res_bold"><span id="should_be_black">Result:</span><span id="fin_level"></span><span id="fin_score"></span></div>
@@ -154,14 +154,14 @@
     </div>
    </div>
   </div>
-  <div class="templates container">
+  <!-- <div class="templates container">
     <div class="row">
       <div class="col"><h3>Templates</h3></div>
     </div>
   
       <div class="tabs">
           <input type="radio" name="tab" id="tab1" checked="checked">
-          <label for="tab1">CVSS:3.0</label>
+          <label for="tab1">CVSS:3.1</label>
           <input type="radio" name="tab" id="tab2">
           <label for="tab2">BIS-IMP:1.0</label>
 
@@ -209,6 +209,6 @@
           </div>
         </div>
     
-  </div>
+  </div> -->
 </body>
 </html>
