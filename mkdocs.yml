@@ -20,6 +20,9 @@ theme:
 
   # Default values, taken from mkdocs_theme.yml
   language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - content.code.annotate
     - content.tabs.link
