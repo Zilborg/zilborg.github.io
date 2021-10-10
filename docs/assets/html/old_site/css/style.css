@@ -40,6 +40,7 @@ body {
 #Result_cvss{
   font: 300 15px Helvetica, Arial, sans-serif;
   color: rgb(128, 128, 128);
+  display: inline-block;
 }
 #Result_bis_imp{
   font: 300 15px Helvetica, Arial, sans-serif;

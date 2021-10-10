@@ -3,6 +3,17 @@ description: >
   Какие типы уязвимостей я для себя выделяю и как их оценивать.
 ---
 
+<aside class="mdx-author" markdown="1">
+![@Zilborg][1]
+
+<span>__Ermolaev Nikita__ · @zilborg</span>
+<span>
+:octicons-clock-24: 10 min read
+</span>
+</aside>
+
+  [1]: https://avatars.githubusercontent.com/u/33390074
+
 ![Vuln_Assessment](vulns_assessment.assets/Vuln_Assessment.png)
 
 ## Типы уязвимостей 
@@ -96,5 +107,6 @@ description: >
 
 
 --8<-- "docs/assets/abbr.md"
+
 
 [^1]: Подразумевается подход, когда специалист безопасности доказывает проблему участникам процесса разработки, а не ставит их перед фактом проблемы, обязательной к устранению.

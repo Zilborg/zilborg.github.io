@@ -1,12 +1,12 @@
 # Project information
-site_name: AppSec Lover
+site_name: N0tes
 site_url: https://zilborg.github.io/
 site_author: Nikita Ermolaev
 site_description: >-
   Personal conner of AppSec notes and other my interests.
 # Repository
 repo_name: zilborg/zilborg.github.io
-repo_url: https://github.com/zilborg.github.io
+repo_url: https://github.com/Zilborg/zilborg.github.io/
 edit_uri: ""
 
 # Copyright
@@ -16,6 +16,7 @@ copyright: Copyright &copy; 2021 Nikita Ermolaev
 theme:
   name: material
   custom_dir: overrides
+  favicon: assets/book-dead_wh.png
 
   # Default values, taken from mkdocs_theme.yml
   language: en
@@ -66,7 +67,7 @@ theme:
 
 # Plugins
 plugins:
-  # - social
+  - social
   - search:
       separator: "[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])"
       lang:
@@ -89,6 +90,9 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/zilborg
   generator: false
+
+extra_css:
+  - assets/css/extra.css
 
 # Extensions
 markdown_extensions:
@@ -116,8 +120,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: zilborg
+      repo: zilborg.github.io
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -137,6 +141,4 @@ nav:
   - Library:
     - META-INF: library/meta-inf.md
     - Management:
-      - Оценка уязвимостей: library/Management/vulns_assessment.md
-  - Blog:
-    - blog/index.md
+      - Оценка уязвимостей: library/management/vulns_assessment.md
