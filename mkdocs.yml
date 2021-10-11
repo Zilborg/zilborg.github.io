@@ -16,13 +16,10 @@ copyright: Copyright &copy; 2021 Nikita Ermolaev
 theme:
   name: material
   custom_dir: overrides
-  favicon: assets/book-dead_wh.png
+  favicon: assets/favicon.png
 
   # Default values, taken from mkdocs_theme.yml
   language: en
-  font:
-    text: Roboto
-    code: Roboto Mono
   features:
     - content.code.annotate
     - content.tabs.link
