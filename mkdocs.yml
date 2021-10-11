@@ -19,7 +19,7 @@ theme:
   favicon: assets/favicon.png
 
   # Default values, taken from mkdocs_theme.yml
-  language: ru
+  language: en
   features:
     - content.code.annotate
     - content.tabs.link
