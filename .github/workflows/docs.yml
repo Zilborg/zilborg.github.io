@@ -43,6 +43,12 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install git+https://${GH_TOKEN}@github.com/Zilborg/mkdocs-material-insiders.git
+      - name: Download & unzip fonts
+        run: |
+          curl -o fonts.zip -L https://fonts.google.com/download?family=Roboto
+          mkdir .cache
+          unzip -p fonts.zip Roboto-Regular.ttf > .cache/Roboto.400.ttf
+          unzip -p fonts.zip Roboto-Bold.ttf > .cache/Roboto.700.ttf 
       - name: Deploy documentation
         # env:
         #   GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
