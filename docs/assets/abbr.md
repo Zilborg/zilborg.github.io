@@ -7,3 +7,4 @@
 *[CVSS]: Common Vulnerability Scoring System
 *[OWASP]: Open Web Application Security Project
 *[АБЦТ]: АкБарс Цифровые Технологии
+*[ZAP]: Zed Attack Proxy

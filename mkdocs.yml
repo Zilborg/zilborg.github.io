@@ -16,10 +16,13 @@ copyright: Copyright &copy; 2021 Nikita Ermolaev
 theme:
   name: material
   custom_dir: overrides
-  favicon: assets/favicon.png
+  favicon: assets/book-dead_wh.png
 
   # Default values, taken from mkdocs_theme.yml
   language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - content.code.annotate
     - content.tabs.link
@@ -142,3 +145,5 @@ nav:
     - META-INF: library/meta-inf.md
     - Management:
       - Оценка уязвимостей: library/management/vulns_assessment.md
+    - How-to:
+      - gRPC security testing: library/how-to/grpc_security_testing.md

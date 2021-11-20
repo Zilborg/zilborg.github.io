@@ -107,6 +107,7 @@ description: >
     <iframe src="/assets/html/old_site/index.html" seamless width="100%" height="400" name="EN_VulnAssessment"></iframe>
 
 
+[Комментарии и дискуссии](https://github.com/Zilborg/zilborg.github.io/discussions/7).
 
 --8<-- "docs/assets/abbr.md"
 
