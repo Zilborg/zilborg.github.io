@@ -1,0 +1,322 @@
+p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.Level_and_score div, .Level_and_score span{
+    margin-left: 1em;
+    display: inline-block;
+}
+.btn {
+  margin-left: 1em;
+  margin-top: -5px
+}
+.btn-end{
+  margin-left: 19em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#fin_res_bold{
+ font: 500 20px Helvetica,Arial, sans-serif;  
+}
+#fin_res_bold span{
+  margin-left: 1em;
+}
+h5 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0.5em 1em 0.5em 0px;
+}
+
+textarea{
+  font-size: 12px;
+}
+
+
+body {
+  min-height: 100%;
+  background-color: #f0f5f8;
+}
+#Result_cvss{
+  font: 300 15px Helvetica, Arial, sans-serif;
+  color: rgb(128, 128, 128);
+  display: inline-block;
+}
+#Result_bis_imp{
+  font: 300 15px Helvetica, Arial, sans-serif;
+  color: rgb(128, 128, 128);
+}
+
+#should_be_black{
+  color:black;
+}
+/*
+.radio,
+.radio__label,
+.radio__label:after,
+.radio__label:before {
+  box-sizing: border-box;
+}
+*/
+
+
+/*
+.radio__container .radio-inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+*/
+.radio__container .radio {
+  display: inline;
+  opacity: 0;
+  width: 0;
+  margin: 0;
+  overflow: hidden;
+  -webkit-appearance: none;
+}
+.radio__container .radio__label {
+/*
+  display: inline-block;
+  height: 50px;
+*/
+  margin-bottom: 0;
+  position: relative;
+  padding: 5px 10px 15px 28px;
+  cursor: pointer;
+  vertical-align: bottom;
+  color: rgba(0, 0, 0, 0.54);
+  font: 300 14px/20px Helvetica, Arial, sans-serif;
+  transition: color 200ms ease;
+}
+.should_block .radio__label{
+  display: block;
+  padding: 5px 10px 10px 28px;
+  margin-bottom: 0;
+}
+
+
+.radio__container .radio__label:before, .radio__container .radio__label:after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  transition: border-color 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, border-color 200ms ease;
+  transition: transform 200ms ease, border-color 200ms ease, -webkit-transform 200ms ease;
+}
+.radio__container .radio__label:before {
+  left: 0;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #dbdbdb;
+}
+.radio__container .radio__label:after {
+  top: 10px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-color: #3c91e6;
+}
+.should_block .radio__label:before {
+  top: 5px;
+}
+.should_block .radio__label:after {
+  top: 10px;
+}
+
+
+.radio__container .radio__label:hover {
+  color: #3c91e6;
+}
+.radio__container .radio:checked + .radio__label:before {
+  border-color: #3c91e6;
+}
+
+
+.radio__container .radio__label:hover:before {
+  border-color: #3c91e6;
+}
+.radio__container .radio:checked + .radio__label {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.radio__container .radio:checked + .radio__label:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+
+/*Select color*/
+.radio__container .ch_color_lab_red:after{
+  background-color: #e63c3c;
+}
+.radio__container .ch_color_lab_red:hover:before {
+  border-color: #e63c3c;
+}
+.radio__container .ch_color_lab_red:hover {
+  color: #e63c3c;
+}
+.radio__container .radio:checked + .ch_color_lab_red:before {
+  border-color: #e63c3c;
+}
+/*-----------------*/
+.radio__container .ch_color_lab_orange:after{
+  background-color: #e6843c;
+}
+.radio__container .ch_color_lab_orange:hover:before {
+  border-color: #e6843c;
+}
+.radio__container .ch_color_lab_orange:hover {
+  color: #e6843c;
+}
+.radio__container .radio:checked + .ch_color_lab_orange:before {
+  border-color: #e6843c;
+}
+/*-----------------*/
+.radio__container .ch_color_lab_green:after{
+  background-color: #27aa31;
+}
+.radio__container .ch_color_lab_green:hover {
+  color: #27aa31;
+}
+.radio__container .ch_color_lab_green:hover:before {
+  border-color: #27aa31;
+}
+.radio__container .radio:checked + .ch_color_lab_green:before {
+  border-color: #27aa31;
+}
+
+
+/*Result color*/
+.color-red{
+  color: #e63c3c;
+}
+.color-orange{
+  color: #e6843c;
+}
+.color-green{
+  color: #27aa31;
+}
+.color-blue{
+  color: #3c91e6;
+}
+
+
+/*Templates block*/
+.templates{
+  margin-top: 40px;
+}
+.templates h3{
+  font: 400 28px Helvetica, Arial, sans-serif;
+  line-height: 0.8em;
+}
+.templates_content {
+  font: 300 14px/20px Helvetica, Arial, sans-serif;
+}
+.templates_content .btn{
+  font-size: 1em;
+  line-height: 10px;
+  margin-top: 2px;
+}
+
+ span.cvss_or_bis_imp{
+  font: 300 14px Helvetica, Arial, sans-serif;
+  color: rgb(128, 128, 128);
+  vertical-align: middle;
+}
+
+/*Tabs*/
+
+.tabs {
+  width: 100%;
+}
+.tabs input[type=radio] {
+  display: none; 
+}
+.tabs label {
+  transition: background 0.4s ease-in-out, height 0.2s linear;
+  display: inline-block;
+  cursor: pointer;
+
+  font: 300 15px Helvetica, Arial, sans-serif;
+  color: #434d4c;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 1.6em; 
+}
+.tabs label:last-of-type {
+  border-bottom: none; 
+}
+.tabs label:hover {
+  color:#3c91e6;
+}
+@media screen and (max-width: 1600px) {
+.tabs label {
+  width: 15%; } 
+}
+@media screen and (max-width: 900px) {
+.tabs label {
+  width: 20%; 
+  } 
+}
+@media screen and (max-width: 600px) {
+.tabs label {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #C7C6C4;
+  border-radius: 0; 
+} 
+}
+@media screen and (max-width: 600px) {
+.tabs {
+  margin: 0; 
+} 
+}
+
+#tab1:checked + label, #tab2:checked + label, #tab3:checked + label, #tab4:checked + label {
+/*  background: #2EBEB9;*/
+  border-bottom: #3c91e6 2px solid;
+}
+
+.tab-content {
+  position: absolute;
+  top: -9999px;
+  padding: 0px 0px;
+}
+
+.tab-content-wrapper{
+  background: #f0f5f8;
+/*  border-top: #2EBEB9 5px solid;*/
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 0px;
+  
+}
+@media screen and (max-width: 600px) {
+.tab-content-wrapper, .tab1-content-wrapper {
+  border: none;
+  border-radius: 0; 
+} 
+}
+
+#tab1:checked ~ .tab-content-wrapper #tab-content-1, #tab2:checked ~ .tab-content-wrapper #tab-content-2, #tab3:checked ~ .tab-content-wrapper #tab-content-3, #tab4:checked ~ .tab-content-wrapper #tab-content-4 {
+  position: relative;
+  top: 0px;
+ }
+
+
+
+/*----Tooltips----*/
+
+
+.tooltip > .tooltip-inner {
+    max-width: 300px;
+    text-align: left;
+  }
+tooltip.top > .tooltip-arrow {
+    
+}
