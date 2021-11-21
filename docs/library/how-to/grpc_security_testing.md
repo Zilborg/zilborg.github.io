@@ -18,7 +18,7 @@ description: >
 
 ## gRPC and DAST tools
 
-Many popular DAST tools, like ZAP, Burp, Nikto, Wapiti (etc.), works appropriately only with HTTP/1.1 protocols.
+Many popular DAST tools, like ZAP, Nikto, Wapiti (etc.), works appropriately only with HTTP/1.1 protocols.
 This is a short note about connecting CI/CD scanners or SSDLc processes to the gRPC API gateway. 
 
 If you have a different implementation, please share your experience [here](https://github.com/Zilborg/zilborg.github.io/discussions/8).   
@@ -43,7 +43,7 @@ It has been discovered that the following tools support gRPC communication by de
 - [evans](https://github.com/ktr0731/evans) (cmd) 
 - [bloomrpc](https://github.com/bloomrpc/bloomrpc) (gui)
 
-However, the most popular solutions for development and working with a request [Postman](https://www.postman.com/product/what-is-postman/) (hi QA 👋) or [BurpSuite](https://portswigger.net/burp) (hi QA and AppSec 👋) do not support gRPC requests by default. 
+However, the most popular solutions for development and working with a request [Postman](https://www.postman.com/product/what-is-postman/) (hi QA 👋) or [BurpSuite](https://portswigger.net/burp) (hi QA and AppSec 👋) do not support gRPC requests by default. However, Burp Pro with the plugin can catch and analyze requests but can not send them.
 
 #### By the researching, we conclude
 
